@@ -1,0 +1,75 @@
+section.slide-nav {
+  /* 0 0 0.6rem 0; */
+  padding: 0.8rem 0 0.8rem;
+  background-color: #fff;
+  /* jdy - 추가 */
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0px;
+}
+
+section.slide-nav > ul {
+  white-space: nowrap;
+  overflow-x: overlay;
+  padding-right: 3.2rem;
+  font-size: 0;
+  /* jdy - 추가 */
+  padding: 0.8rem 0;
+  padding-bottom: 0;
+  white-space: nowrap;
+  overflow-x: overlay;
+  padding-right: 3.2rem;
+  font-size: 0;
+
+}
+section.slide-nav > ul > li > button {
+  margin-right: 4px;
+  height: 3.2rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #767676;
+  transform: skew(-0.001deg);
+}
+section.slide-nav > ul > li > button.active {
+  border-color: #0d4d97;
+  color: #0d4d97;
+  font-weight: 500;
+}
+section.slide-nav > button.type-to-end {
+  position: absolute;
+  top: 0.8rem;
+  right: 0rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0;
+  background: #bebebe;
+
+  /* jdy - 추가 */
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0;
+  background: #bebebe;
+  /* right: 1.6rem; */
+}
+section.slide-nav > button.type-to-end::before {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  top: 1rem;
+  left: calc(50% - 0.6rem);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform-origin: 66% 66%;
+  transform: rotate(-45deg);
+}
+section.slide-nav > ul::-webkit-scrollbar {
+  opacity: 0;
+}

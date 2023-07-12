@@ -1,0 +1,74 @@
+main.write .declare-location-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.write .declare-location-form img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+.contents-wrap > .contents {
+  border-top: 1px solid #e1e1e1;
+}
+.declare ul.contents > li {
+  padding: 1.6rem 2rem 1rem 11rem;
+}
+
+.declare ul.contents > li .extra-info {
+  margin-left: -11rem;
+  padding: 0.8rem 0.8rem 0;
+}
+
+/* Jdy -추가 */
+main.sub.board.declare {
+  padding-bottom: 6rem;
+}
+main.sub.board.declare section.contents-wrap {
+  margin: 0 -1.6rem;
+}
+main.sub.board.declare section.contents-wrap li.content-wrap {
+  margin-left: 1.6rem;
+}
+
+ul.overflow__hidden {
+  overflow-x: hidden;
+}
+li.overflow__hidden {
+  position: relative;
+}
+
+/* .swiped .delete {
+  right: 0;
+  transition: right 0.2s ease-in-out;
+} */
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 6rem;
+  line-height: 100%;
+  background: #0d4d97;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s;
+}
+.content-wrap {
+  display: flex;
+  overflow-x: scroll;
+}
+.content-wrap::-webkit-scrollbar {
+  display: none;
+}
+.content-wrap.swiped .delete {
+  position: absolute;
+  margin: 0;
+}

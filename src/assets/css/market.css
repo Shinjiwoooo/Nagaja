@@ -1,0 +1,395 @@
+figure > button.btn-add-basket {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 1.4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+  background-color: #FFF;
+  background-image: url(../img/icon_basket_02.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul.prd-list > li {
+  display: block;
+  padding: 2.5rem 1.6rem 2.5rem 5rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+ul.prd-list > li:first-child {
+  padding-top: 1.8rem;
+}
+ul.prd-list > li > div.checkbox-container {
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: 1.6rem;
+}
+ul.prd-list > li > div.checkbox-container > input {
+  display: none;
+}
+ul.prd-list > li > div.checkbox-container > input + label {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/icon_checkbox_01_off.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul.prd-list > li > div.checkbox-container > input:checked + label {
+  background-image: url(../img/icon_checkbox_01_on.svg);
+}
+ul.prd-list > li > figure {
+  float: left;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+}
+ul.prd-list > li > figure > button.btn-add-basket {
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  background-size: 1.6rem 1.6rem;
+}
+ul.prd-list > li > div.detail {
+  float: left;
+  width: calc(100% - 9.8rem);
+  padding-left: 1.2rem;
+}
+ul.prd-list > li > div.detail > h4 {
+  font-weight: 700;
+}
+ul.prd-list > li > div.detail > p.hash-tag,
+main.market.view > section.def-info > div.contents > p.hash-tag {
+  padding: 0.6rem 0 2.2rem;
+}
+ul.prd-list > li > div.detail > p.hash-tag > span,
+main.market.view > section.def-info > div.contents > p.hash-tag > span {
+  color: #0D4D97;
+  font-size: 1.2rem;
+  margin-right: 1px;
+}
+ul.prd-list > li > div.detail > p.hash-tag > span::before,
+main.market.view > section.def-info > div.contents > p.hash-tag > span::before {
+  content: '#';
+  color: #0D4D97;
+  font-size: 1.2rem;
+}
+ul.prd-list > li > div.detail > div.count-n-price > div.count {
+  height: 3rem;
+  line-height: 3rem;
+}
+ul.prd-list > li > div.detail > div.count-n-price > div.count > button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: 1px solid #E1E1E1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul.prd-list > li > div.detail > div.count-n-price > div.count > button.btn-decrease {
+  background-image: url(../img/icon_decrease_01.svg);
+}
+ul.prd-list > li > div.detail > div.count-n-price > div.count > button.btn-increase {
+  background-image: url(../img/icon_increase_01.svg);
+}
+ul.prd-list > li > div.detail > div.count-n-price > div.count > button.disabled {
+  background-color: #F5F5F5;
+}
+ul.prd-list > li > div.detail > div.count-n-price > div.count > span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+ul.prd-list > li > div.detail > div.count-n-price > span.price {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0;
+  display: inline-block;
+  padding-left: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+ul.prd-list > li > div.detail > div.count-n-price > span.price::before {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 2.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+ul.prd-list > li > div.detail > div.count-n-price > span.price.won::before {
+  content: '￦';
+}
+section.prd {
+  padding: 2.2rem 1.6rem 0;
+}
+section.prd > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0 0 0.8rem;
+}
+section.prd > ul {
+  font-size: 0;
+}
+section.prd > ul > li {
+  width: calc(50% - 0.6rem);
+}
+section.prd > ul > li:nth-child(odd) {
+  margin-right: 0.6rem;
+}
+section.prd > ul > li:nth-child(even) {
+  margin-left: 0.6rem;
+}
+section.prd > ul > li > figure {
+  width: 100%;
+  height: 16.5rem;
+  border-radius: 0.4rem;
+}
+section.prd > ul > li > figure > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-top-left-radius: 0.4rem;
+  background:rgba(34, 34, 34, 0.6);
+  font-family: 'Noto Sans KR';
+  font-size: 1rem;
+  color: #FFF;
+  padding: 0.2rem 1rem 0.4rem 1.3rem;
+  transform: skew(-0.001deg);
+}
+section.prd > ul > li > figure > span.pink {
+  background:rgba(255, 71, 85, 0.6);
+}
+section.prd > ul > li > h4 {
+  padding: 0.5rem 0;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+section.prd > ul > li > p > span,
+section.prd > ul > li > p > span::before {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+section.prd > ul > li > p.hash-tag > span {
+  color: #0D4D97;
+  font-size: 1.2rem;
+  margin-right: 1px;
+}
+section.prd > ul > li > p.hash-tag > span::before {
+  content: '#';
+  color: #0D4D97;
+  font-size: 1.2rem;
+}
+section.prd > ul > li > p.review,
+main.market.view > section.def-info > div.contents > p.review {
+  padding: 0.4rem 0 1.8rem;
+}
+section.prd > ul > li > p.review > span.ratio,
+main.market.view > section.def-info > div.contents > p.review > span.ratio {
+  display: inline-block;
+  padding: 0 1.5rem 0 1.7rem;
+  font-size: 1.1rem;
+}
+section.prd > ul > li > p.review > span.ratio::before,
+main.market.view > section.def-info > div.contents > p.review > span.ratio::before {
+  content: '';
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../img/icon_star_03.svg) no-repeat center;
+}
+section.prd > ul > li > p.review > span.ratio::after,
+main.market.view > section.def-info > div.contents > p.review > span.ratio::after {
+  content: '';
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 1px;
+  height: 1rem;
+  background: #BEBEBE;
+}
+section.prd > ul > li > p.review > span.count,
+main.market.view > section.def-info > div.contents > p.review > span.count {
+  font-size: 1.1rem;
+}
+section.prd > ul > li > p.review > button.btn-toggle-wish {
+  float: right;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/icon_like_04_off.svg) no-repeat center;
+}
+section.prd > ul > li > p.review > button.btn-toggle-wish.on {
+  background: url(../img/icon_like_04_on.svg) no-repeat center;
+}
+section.prd > ul > li > div.exchange > p,
+main.market.view > section.def-info > div.contents > div.exchange > p {
+  padding: 0 0 0.6rem 2.7rem;
+}
+section.prd > ul > li > div.exchange > p.current,
+main.market.view > section.def-info > div.contents > div.exchange > p.current {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+section.prd > ul > li > div.exchange > p::before,
+main.market.view > section.def-info > div.contents > div.exchange > p::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.6rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+section.prd > ul > li > div.exchange > p.current::before,
+main.market.view > section.def-info > div.contents > div.exchange > p.current::before {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+section.prd > ul > li > div.exchange > p.won::before,
+main.market.view > section.def-info > div.contents > div.exchange > p.won::before {
+  content: '￦';
+}
+section.prd > ul > li > div.exchange > p.peso::before,
+main.market.view > section.def-info > div.contents > div.exchange > p.peso::before {
+  content: '₱';
+}
+section.prd > ul > li > div.exchange > p > span.original,
+main.market.view > section.def-info > div.contents > div.exchange > p > span.original {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #9F9F9F;
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  vertical-align: top;
+  text-decoration: line-through;
+}
+/* 검색 */
+div.search-area {
+  padding: 0 1.6rem;
+}
+div.search-area > button {
+  position: absolute;
+  top: 0;
+  right: 1.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 0;
+  line-height: 3.4rem;
+  background-color: #000;
+  background-image: url(../img/icon_search_03.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.search-area > input {
+  width: 100%;
+  height: 3.6rem;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding-right: 3.6rem;
+  color: #222;
+}
+/* FOOTER */
+#footer-market > div.cs-info {
+  padding: 1.7rem 1.6rem;
+  background: #616161;
+}
+#footer-market > div.cs-info > p {
+  color: #FFF;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+#footer-market > div.cs-info > p.title {
+  padding-left: 2rem;
+  margin-bottom: 2px;
+}
+#footer-market > div.cs-info > p.title::before {
+  content: '';
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/icon_headphone_01.svg) no-repeat center;
+}
+#footer-market > div.cs-info > p > a {
+  float: right;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  background-color: #8F8F8F;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0.2rem;
+  margin-left: 0.6rem;
+}
+#footer-market > div.cs-info > p > a.btn-call {
+  background-image: url(../img/icon_phone_03.svg);
+}
+#footer-market > div.cs-info > p > a.btn-chat {
+  background-image: url(../img/icon_chat_04.svg);
+}
+#footer-market > div.cs-info > p.cs-number {
+  font-size: 1.2rem;
+}
+#footer-market > div.company-info {
+  padding: 1.8rem 1.6rem 1.2rem;
+  background: rgba(97, 97, 97, 0.1);
+}
+#footer-market > div.company-info > section {
+  padding-bottom: 2.2rem;
+  font-size: 0;
+}
+#footer-market > div.company-info > section.links {
+  line-height: 1.6rem;
+}
+#footer-market > div.company-info > section > p {
+  line-height: 2rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #818181;
+  transform: skew(-0.001deg);
+}
+#footer-market > div.company-info > section > p > a {
+  color: #222;
+  text-decoration: underline;
+}
+#footer-market > div.company-info > section > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.8rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.1rem;
+  transform: skew(-0.001deg);
+}
+#footer-market > div.company-info > section > a:first-child {
+  padding-left: 0;
+}
+#footer-market > div.company-info > section > a:nth-child(4) {
+  padding-right: 0;
+}
+#footer-market > div.company-info > section > a:nth-child(5) {
+  padding-left: 0;
+}
+#footer-market > div.company-info > section > a::after {
+  content: '';
+  position: absolute;
+  top: 0.4rem;
+  right: -0.1rem;
+  width: 1px;
+  height: 1rem;
+  background: #222;
+}
+#footer-market > div.company-info > section > a:nth-child(4)::after {
+  display: none;
+}

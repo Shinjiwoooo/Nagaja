@@ -1,0 +1,43 @@
+section.exchange-ratio {
+  height: 6rem;
+  /* line-height: 6rem; */
+  padding: 0 7.6rem 0 1.6rem;
+  background: #f5f5f5;
+}
+section.exchange-ratio > p {
+  /* white-space: nowrap; */
+}
+section.exchange-ratio > p > span {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 300;
+  transform: skew(-0.001deg);
+}
+section.exchange-ratio > p > span.v-divider {
+  margin: 0 0.4rem;
+}
+section.exchange-ratio > button.btn-calculator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 100%;
+  line-height: 6rem;
+  background: #0d4d97;
+  text-align: center;
+  border-radius: 0;
+}
+section.exchange-ratio > button.btn-calculator > input,
+section.exchange-ratio > button.btn-calculator > image {
+  width: 2rem;
+}
+section.exchange-ratio p > img {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+/* Jdy -추가 */
+section.exchange-ratio {
+  display: flex;
+  align-items: center;
+}

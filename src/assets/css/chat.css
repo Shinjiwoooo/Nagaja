@@ -1,0 +1,517 @@
+nav#nav-chat {
+  position: relative;
+  height: 4.6rem;
+  padding: 0 1.5rem;
+  background: #f5f5f5;
+  border-top: 1px solid #e1e1e1;
+}
+nav#nav-chat > ul {
+  display: inline-block;
+  padding: 0.9rem 0;
+}
+nav#nav-chat > ul > li {
+  margin-right: 1.5rem;
+}
+nav#nav-chat > select {
+  width: auto;
+  border: none;
+  color: #222;
+  background-position: top 2rem right 1rem;
+}
+nav#nav-chat > div.nice-select {
+  width: 9.5rem;
+  border: none;
+  background: transparent;
+}
+main.chat-list,
+main.chat-detail {
+  padding: 0;
+}
+main.chat-detail > ul.container {
+  overflow-y: auto;
+}
+main.chat-list > div.container > ul > li {
+  display: block;
+  padding: 1.8rem 1.6rem 2.2rem;
+  border-bottom: 1px solid #f5f5f5;
+  transition: all 0.15s;
+}
+main.chat-list > div.container > ul > li > figure {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  background: #f4f4f4;
+  border-radius: 1.6rem;
+  margin: 0.2rem 1.3rem 0 0;
+  transition: all 0.15s;
+}
+main.chat-list > div.container > ul > li > div > p.room {
+  padding-bottom: 0.4rem;
+}
+main.chat-list > div.container > ul > li > div > p.room > span.name {
+  font-size: 1.4rem;
+  color: #222;
+}
+main.chat-list > div.container > ul > li > div > p.room > span.count {
+  margin-left: 0.2rem;
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+main.chat-list > div.container > ul > li > div > p.room > span.datetime {
+  float: right;
+  font-size: 1.1rem;
+  color: #bebebe;
+  margin-top: 0.3rem;
+}
+main.chat-list > div.container > ul > li > div > p.latest {
+  display: -webkit-box;
+  font-size: 1.2rem;
+  padding-right: 9.6rem;
+  color: #626262;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+main.chat-list > div.container > ul > li > div > span.new-count {
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
+  display: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 0.8rem;
+  background: #0d4d97;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+main.chat-list > div.container > ul > li > div > span.new-count.show {
+  display: inline-block;
+}
+
+button.btn-quit-room{
+  z-index: 9999;
+}
+
+main.chat-list > div.container > ul > li > button.btn-quit-room {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  font-size: 0;
+  transition: all 0.15s, font-size 0s; */
+}
+main.chat-list > div.container > ul > li.swiped {
+  /* padding-left: 0;
+  padding-right: 9rem;
+  transition: all 0.15s; */
+}
+main.chat-list > div.container > ul > li.swiped > figure {
+  /* width: 0;
+  transition: all 0.15s; */
+}
+main.chat-list > div.container > ul > li.swiped > button.btn-quit-room {
+  /* width: 8rem;
+  line-height: 100%;
+  background: #0d4d97;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s; */
+}
+
+/* swipe list*/
+main.chat-list > div.container > div > div {
+  display: block;
+  padding: 1.8rem 1.6rem 2.2rem;
+  border-bottom: 1px solid #f5f5f5;
+  transition: all 0.15s;
+}
+.swipeable-list > .swipeable-list-item figure {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  background: #f4f4f4;
+  border-radius: 1.6rem;
+  margin: 0.2rem 1.3rem 0 0;
+  transition: all 0.15s;
+}
+.swipeable-list > .swipeable-list-item > div > div {
+  width: 100%;
+}
+.swipeable-list > .swipeable-list-item p.room {
+  padding-bottom: 0.4rem;
+}
+.swipeable-list > .swipeable-list-item p.room > span.name {
+  font-size: 1.4rem;
+  color: #222;
+}
+.swipeable-list > .swipeable-list-item p.room > span.count {
+  margin-left: 0.2rem;
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+.swipeable-list > .swipeable-list-item p.room > span.datetime {
+  float: right;
+  font-size: 1.1rem;
+  color: #bebebe;
+  margin-top: 0.3rem;
+}
+.swipeable-list > .swipeable-list-item p.latest {
+  display: -webkit-box;
+  font-size: 1.2rem;
+  padding-right: 9.6rem;
+  color: #626262;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.swipeable-list > .swipeable-list-item span.new-count {
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
+  display: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 0.8rem;
+  background: #0d4d97;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.swipeable-list > .swipeable-list-item span.new-count.show {
+  display: inline-block;
+}
+/* .swipeable-list > .swipeable-list-item button.btn-quit-room {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  font-size: 0;
+  transition: all 0.15s, font-size 0s;
+} */
+main.chat-list > div.container > div > div.swiped {
+  padding-left: 0;
+  padding-right: 9rem;
+  transition: all 0.15s;
+}
+main.chat-list > div.container > div > div.swiped > figure {
+  width: 0;
+  transition: all 0.15s;
+}
+.swipe-action > button.btn-quit-room {
+  width: 8rem;
+  line-height: 100%;
+  background: #0d4d97;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s;
+}
+
+.chat-list > div.container > div > div.swiped {
+  padding-left: 0;
+  padding-right: 9rem;
+  transition: all 0.15s;
+}
+.chat-list > div.container > div > div.swiped > figure {
+  width: 0;
+  transition: all 0.15s;
+}
+.chat-list > div.container > div > div.swiped > button.btn-quit-room {
+  width: 8rem;
+  line-height: 100%;
+  background: #0d4d97;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s;
+}
+
+/* chat-detail */
+.chat-detail {
+  height: 100vh;
+}
+.chat-detail > .container {
+  padding: 2.3rem 1.6rem;
+  background: #fff;
+  height: calc(100% - 10.5rem);
+  border-bottom: 1px solid #e1e1e1;
+  overflow-y: auto;
+}
+
+/* chat-item */
+.chat-items {
+  width: 100%;
+}
+.chat-items > .not-me {
+  position: relative;
+  padding-left: 5.6rem;
+  padding-bottom: 1.8rem;
+}
+.chat-items figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.6rem;
+  background: #f4f4f4;
+  margin-right: 1.6rem;
+}
+
+
+.chat-items p.name {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  color: #222;
+  padding-bottom: 0.4rem;
+  transform: skew(-0.001deg);
+}
+.chat-items div.chat > span.content {
+  display: inline-block;
+  max-width: calc(100% - 10rem);
+  background: #f5f5f5;
+  padding: 1.2rem 1.4rem;
+  border-radius: 1.6rem;
+  border-top-left-radius: 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.3rem;
+  text-align: left;
+  transform: skew(-0.001deg);
+}
+.chat-items div.chat.img-chat {
+  padding: 0;
+  background: transparent;
+}
+.chat-items div.chat.img-chat > img {
+  width: calc(100% - 10rem);
+  border-radius: 1.6rem;
+}
+.chat-items div.chat > span > span.count {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0d4d97;
+}
+.chat-items div.chat > span.datetime {
+  display: inline-block;
+  font-size: 1rem;
+  color: #bebebe;
+  vertical-align: bottom;
+  margin-left: 0.2rem;
+}
+
+.chat-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.chat-content > .chat-items{
+  margin-top: auto;
+}
+.chat-content > .chat-items > div{
+  margin-bottom: 1.2rem;
+}
+
+/* chat view : me */
+.chat-items .me > div.chat {
+  text-align: right;
+}
+.chat-items .me > div.chat > span.datetime {
+  margin-right: 0.2rem;
+}
+.chat-items .me > div.chat > span.content {
+  background: #0D4D97;
+  color: #FFF;
+  border-radius: 1.6rem;
+  border-top-right-radius: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 1.2rem 2.8rem 1.4rem 1.2rem;
+  transform: skew(-0.001deg);
+}
+
+.chat-items .me > div.chat > span > span.count {
+  bottom: 1.4rem;
+  left: -1.1rem;
+}
+
+/* chat view : not-me */
+.chat-items .not-me > div.chat > span > span.count {
+  bottom: 1.4rem;
+  right: -1.2rem;
+}
+
+
+/* chat input form */
+.chat-form {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.chat-form > div {
+  padding: 1.5rem 1.6rem 0;
+  display: flex;
+}
+.chat-form > div > input {
+  width: calc(100% - 6.4rem);
+  height: 3.8rem;
+  border-radius: 1.9rem;
+  margin: 0 0.8rem;
+  padding: 0 1.6rem;
+  font-size: 1.3rem;
+  color: #222;
+}
+.chat-form > div > button {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 0.7rem;
+}
+.chat-form > div > button.btn-add {
+  background: url(../img/icon_add_01.svg) no-repeat center;
+  background-size: cover;
+}
+.chat-form > div > button.btn-send {
+  background: url(../img/icon_send_01.svg) no-repeat center;
+}
+/* .chat-form > ul {
+  display: block;
+  padding: 4.6rem 0 4.6rem;
+  text-align: center;
+}
+.chat-form > ul > li {
+  text-align: center;
+  min-width: 5.6rem;
+  margin: 0 1rem;
+} */
+
+
+
+/* Jdy -추가 */
+nav#nav-chat {
+  top: 4.6rem;
+}
+main.chat-list {
+  top: 4rem;
+  margin-bottom: 7rem;
+}
+/* main.chat-list {
+  top: 9rem;
+} */
+nav#nav-chat {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+nav#nav-chat > select {
+  right: 1rem;
+  position: absolute;
+}
+.rooms-select {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.8rem;
+}
+.rooms-select .css-1dimb5e-singleValue {
+  font-size: 1.3rem;
+}
+.css-qbdosj-Input {
+  padding: 0;
+  margin: 0;
+}
+.css-1fdsijx-ValueContainer {
+  padding: 0;
+  margin: 0;
+}
+.css-pyzg19-control {
+  height: 100%;
+}
+.css-pyzg19-control {
+  background-color: #f5f5f5;
+}
+
+#header.chats {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+main.chat-detail > div.chat-form > div {
+  padding: 1.5rem 1.6rem 0;
+}
+
+main.chat-detail > ul.container {
+  height: calc(100vh - 12rem);
+}
+main.chat-detail > ul.container.expand {
+  height: calc(100vh - 25.7rem);
+}
+
+main.chat-detail > div.chat-form > div {
+  padding: 1.5rem 1.6rem 0;
+  display: flex;
+}
+@media only screen and (max-width: 280px) { 
+  #header > h1 {
+    font-size: 1.3rem
+  }
+}
+
+#header {
+  top: 0;
+}
+
+div.contents-wrap {
+  /* margin: 0 -1.6rem; */
+}
+div.contents-wrap li.content-wrap {
+  margin-left: 1.6rem;
+}
+ul.overflow__hidden {
+  overflow-x: hidden;
+}
+li.overflow__hidden {
+  position: relative;
+}
+.delete {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 6rem;
+  line-height: 100%;
+  background: #0d4d97;
+  border-radius: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s;
+}
+.content-wrap {
+  display: flex;
+  overflow-x: scroll;
+}
+.content-wrap::-webkit-scrollbar {
+  display: none;
+}
+.content-wrap.swiped .delete {
+  position: absolute;
+  margin: 0;
+}

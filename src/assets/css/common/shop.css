@@ -1,0 +1,88 @@
+/* section 되면서 정보 변경*/
+
+main.shop > section.menu-n-review {
+    padding-bottom: 0;
+    border-bottom: none
+  }
+
+main.shop > section.menu-n-recommand {
+  padding: 0 1.6rem 1rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+main.shop > section.menu-n-recommand > ul.common-tab {
+    padding: 0;
+  }
+  main.shop > section.menu-n-recommand > p.title {
+    padding: 1.8rem 0 1rem;
+  }
+  main.shop > section.menu-n-recommand > p.title > span {
+    display: none;
+    font-weight: 500;
+  }
+  main.shop > section.menu-n-recommand > p.title > span.show {
+    display: inline;
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list {
+    display: none;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    font-size: 0;
+    padding-bottom: 1rem;
+  }
+
+  
+main.shop > section.menu-n-recommand > ul.menu-list.show {
+    display: block;
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list > li {
+    width: 9.6rem;
+    margin-right: 1rem;
+    border-radius: 0.4rem;
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list > li:last-child {
+    margin-right: 0;
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list > li > figure > img {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list > li > div {
+    padding: 0.6rem 0.9rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border: 1px solid #E1E1E1;
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list > li > div > p {
+    font-family: 'Noto Sans KR';
+    font-size: 1.2rem;
+    font-weight: 500;
+    transform: skew(-0.001deg);
+  }
+  main.shop > section.menu-n-recommand > ul.menu-list > li > div > p.name {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+  }
+
+
+
+  /* inmenu */
+  ul > li.norow{
+    padding: 1.6rem 0;
+  }
+  ul > li.norow > div {
+    margin: 2.8rem 0;
+    padding: 3.2rem 1.8rem 3rem !important;
+    text-align: center;
+    background-color: #efefef;
+    border: #dfdfdf;
+    border-radius: 0.4rem;
+  }
+  ul > li.norow > div > div {
+    font-size: 1.2rem;    
+    color: #6e6e6e;
+  }

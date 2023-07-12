@@ -1,0 +1,543 @@
+.icon-file-attach {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.flex-nw {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.biz-popup div {
+  min-height: 46rem;
+}
+.biz-popup .react-datepicker {
+  width: 100%;
+}
+.biz-popup .react-datepicker__month-container {
+  width: 100%;
+  height: 23rem;
+}
+.biz-popup .react-datepicker__current-month {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  right: 0;
+  margin-bottom: 2rem;
+}
+.biz-popup .react-datepicker__day-names {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+.biz-popup .react-datepicker__day-name {
+  flex-grow: 1;
+}
+.biz-popup .react-datepicker__month {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.biz-popup .react-datepicker__week {
+  justify-content: space-between;
+  display: flex;
+}
+a > img {
+  width: 100%;
+  border-radius: inherit;
+}
+input::placeholder {
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+}
+button.default {
+  height: 4.4rem;
+  line-height: 4.2rem;
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  border: 1px solid #222;
+  border-radius: 0.4rem;
+}
+button[type=primary] {
+  height: 4.4rem;
+  line-height: 4.2rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+div.nice-select {
+  float: none;
+  width: 100%;
+  height: 4rem;
+  line-height: 3.8rem;
+}
+div.nice-select.disabled {
+  background: #F5F5F5;
+  border-color: #E1E1E1;
+}
+div.nice-select .list {
+  width: 100%;
+  z-index: 99;
+}
+div.common-container > div, main > form > div.item {
+  font-size: 0;
+  padding: 1.7rem 0 0;
+}
+div.common-container > div:first-child {
+  padding-top: 0.8rem;
+}
+div.common-container > div.no-top-padding {
+  padding-top: 0;
+}
+div.common-container > div > p, main > form > div.item > label,
+div.container > div.attach-file > p, 
+main > form > div.item.attach-file > p {
+  margin-bottom: 0.8rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+div.common-container > div.attach-image > p, main > form > div.item.attach-image > label {
+  margin-bottom: 0.3rem;
+}
+div.common-container > div > input, 
+div.common-container > div > div > input,
+div.common-container > div > .nice-select,
+main > form > div.item > input, 
+main > form > div.item > .nice-select {
+  width: 100%;
+  height: 4rem;
+  line-height: 3.8rem;
+}
+div.common-container > div > input, 
+div.common-container > div > div > input, 
+main > form > div.item > input {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+div.common-container > div > .nice-select, main > form > div.item > .nice-select {
+  float: none;
+}
+div.common-container > div > div > span.extra {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.6rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+div.common-container > div.has-btn > div > input {
+  width: 26.1rem;
+}
+div.common-container > div.has-btn > div > button
+ {
+  float: right;
+  width: 7.5rem;
+  height: 4rem;
+  line-height: 3.8rem;
+}
+div.common-container div.has-btn .pb-04 input {
+  width: 100%;
+}
+div.common-container div.has-btn .edit-container input,
+div.common-container  div.has-btn .edit-container--column input {
+  width: 80%;
+}
+div.common-container div.has-btn .edit-container button,
+div.common-container  div.has-btn .edit-container--column button {
+  width: 18%
+}
+div.common-container div.has-btn .edit-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+div.common-container  div.has-btn .edit-container--column {
+  display: flex;
+  flex-direction: column;
+}
+div.common-container div.has-btn .edit-container .btn-edit,
+div.common-container  div.has-btn .edit-container--column .btn-edit {
+  position: absolute;
+  right: 0;
+  margin-left: 0.5rem;
+}
+div.common-container > div.address > input, main > form > div.item.address > input {
+  margin-bottom: 0.8rem;
+}
+div.common-container > div.address > div.location > input, 
+main > form > div.item.address > div.location > input {
+  width: 30.3rem;
+}
+div.common-container > div.address > div.location > img, 
+main > form > div.item.address > div.location > img {
+  float: right;
+  margin: 0.8rem 0.9rem 0 0;
+  width: 2.4rem;
+}
+div.common-container > div.location > div > input {
+  width: 30.3rem;
+}
+div.common-container > div.location > div > input + img {
+  float: right;
+  margin: 0.8rem 0.9rem 0 0;
+  width: 2.4rem;
+}
+div.common-container > div.multi-input > input:not(:last-child), 
+main > form > div.multi-input > input:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+/* 파일 첨부 */
+div.common-container > div.attach-file > label, main > form > div.item.attach-file > label
+ {
+  position: absolute;
+  top: 4.4rem;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  color: #222;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  outline: none;
+  border-radius: 0.4rem;
+  z-index: 9;
+}
+div.common-container > div.attach-file > label::after 
+ {
+  content: '';
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-position: right center;
+  background: url(../img/icon_attach_file_01.svg) no-repeat
+}
+div.product .product-image input.file-name {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.product .product-image label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(0, -50%);
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../img/icon_attach_file_01.svg) no-repeat center
+}
+div.common-container > div.attach-file > input.file-name, 
+main > form > div.item.attach-file > input.file-name {
+  height: 4rem;
+  line-height: 3.8rem;
+  color: #222;
+}
+/* 이미지 첨부 */
+div.common-container > div.attach-image > ul, main > form > div.item.attach-image > ul {
+  white-space: nowrap;
+  margin-top: 0.6rem;
+  font-size: 0;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+}
+div.common-container > div.attach-image > ul, main > form > div.item.attach-image > ul {
+  margin-top: 0;
+}
+div.common-container > div.attach-image > ul > li, 
+main > form > div.item.attach-image > ul > li {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-left: 0.3rem;
+  vertical-align: top;
+}
+div.common-container > div.attach-image > ul > li:first-child, 
+main > form > div.item.attach-image > ul > li:first-child {
+  margin-left: 0;
+}
+div.common-container > div.attach-image > ul > li > div, 
+main > form > div.item.attach-image > ul > li > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 7.2rem;
+  height: 7.2rem;
+}
+div.common-container > div.attach-image > ul > li:not(:first-child) > div > img, 
+main > form > div.item.attach-image > ul > li:not(:first-child) > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.common-container > div.attach-image > ul > li:not(:first-child) > button.btn-del, 
+main > form > div.item.attach-image > ul > li:not(:first-child) > button.btn-del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/btn_close_02.svg) no-repeat center;
+  z-index: 9;
+}
+div.common-container > div.attach-image > ul > li:first-child > div, 
+main > form > div.item.attach-image > ul > li:first-child > div {
+  border: 1px solid rgba(33, 119, 228, 0.3);
+  padding: 1.4rem 0 0;
+  text-align: center;
+}
+div.common-container > div.attach-image > ul > li:first-child > div > p.upload-state, 
+main > form > div.item.attach-image > ul > li:first-child > div > p.upload-state {
+  font-size: 0;
+}
+div.common-container > div.attach-image > ul > li:first-child > div > p.upload-state > span, 
+main > form > div.item.attach-image > ul > li:first-child > div > p.upload-state > span {
+  font-size: 1.1rem;
+  color: rgba(33, 119, 228, 0.3);
+}
+/* 기업 정보 */
+div.shop-info {
+  min-height: 11.4rem;
+  padding: 0.8rem 1.6rem 1.2rem 12.6rem
+}
+div.shop-info img {
+  position: absolute;
+  top: 0.8rem;
+  left: 1.6rem;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+  z-index: 1;
+}
+div.shop-info > h3.name {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 0 0.2rem;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main.biz.info .shop-info h3.name {
+  white-space: pre-line;
+}
+/* 버튼 영역 */
+div.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* 팝업 */
+#biz-popup {
+  position: fixed;
+  /* bottom: 9rem; */
+  bottom: 7rem;
+  left: 0;
+  width: 100%;
+  /* height: calc(100% - 13.6rem); */
+  /* height: 100vh; */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10000;
+}
+#biz-popup > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #FFF;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.8rem 1.6rem 2rem;
+}
+#biz-popup > div > h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#biz-popup > div > h3 > button {
+  float: right;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../img/btn_close_01.svg) no-repeat center;
+}
+#biz-popup > div > div.contents > div.item {
+  padding: 0 0 2rem;
+}
+#biz-popup > div > div.contents > div.item > p {
+  margin-bottom: 0.8rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+#biz-popup > div > div.contents > div.item > p > button.btn-add {
+  float: right;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: 0.2rem;
+  background: url(../img/icon_add_01.svg) no-repeat center;
+}
+#biz-popup > div > div.contents > div.item > div:not(:last-of-type) {
+  margin-bottom: 0.8rem;
+}
+#biz-popup > div > div.contents > div.item > input, #biz-popup > div > div.contents > div.item > div > input {
+  width: 100%;
+  height: 4rem;
+  line-height: 3.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#biz-popup > div > div.contents > div.item > input, #biz-popup > div > div.contents > div.item > div > span.extra {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.6rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+#biz-popup > div > div.contents > div.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+}
+#biz-popup > div > div.contents > div.checkbox-container > input {
+  display: none;
+}
+#biz-popup > div > div.contents > div.checkbox-container > input + label {
+  display: inline-block;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 2.2rem;
+  text-align: center;
+  line-height: 4.4rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  transform: skew(-0.001deg);
+}
+#biz-popup > div > div.contents > div.checkbox-container > input:checked + label {
+  background: #0D4D97;
+  color: #FFF;
+}
+div.bottom-margin {
+  margin-bottom: 0.8rem;
+}
+main.biz.info.edit .common-container .address.biz .location {
+  display: flex;
+  align-items: center;
+}
+main.biz.info.edit .common-container .address.biz .location input {
+  margin-right: 0.5rem;
+}
+main.biz.info.edit .common-container .address.biz .location img {
+  margin: 0;
+}
+main.biz.info.sale .edit-wrapper {
+  display: flex;
+  align-items: center;
+}
+main.biz.info.sale .edit-wrapper input {
+  margin: 0.5rem;
+  flex-grow: 1;
+}
+main.biz.info.sale .break-time .container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: flex-start;
+
+}
+main.biz.info.sale .break-time-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0.5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+  margin-right: 0;
+}
+main.biz.info.sale .break-time-wrapper input {
+  width: 100%;
+  border: none;
+  /* margin: 0.5rem */
+}
+/* main.biz.info.sale .break-time-wrapper:first-child  input{
+  margin: 0.5rem 0.5rem 0;
+  width: 18.3rem;
+
+}
+main.biz.info.sale .break-time-wrapper:last-child input {
+  margin: 0 0.5rem 0.5rem;
+} */
+main.biz.info.sale .break-time-wrapper ~ .btn-edit {
+  width: 7.5rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* 상품 등록 */
+.product .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product .product-name-container {
+  display: flex;
+  align-items: center;
+}
+.product .product-name-container img {
+  position: absolute;
+  right: 1rem;
+}
+.product .amount-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.product .amount-container .currency {
+  width: 20%;
+}
+.product .product-description,
+.product .product-image {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product .product-description .title,
+.product .product-image .title {
+  font-weight: 700;
+}
+.product .product-description textarea {
+  height: 10rem;
+}
+.product button {
+  margin-top: 1rem;
+  height: 44px;
+  background: #0D4D97;
+  border-radius: 4px;
+  color: #fff;  
+}
+
+@media screen and (max-height: 668px) {
+  #biz-popup > div > div.contents:not(.biz-time):not(.break-time) {
+    max-height: 40rem;
+    overflow-y: auto;
+  }
+  main.biz.info.sale .break-time-wrapper ~ .btn-edit {
+    width: 5.5rem;
+    margin-top: 0.5rem;
+  }
+}

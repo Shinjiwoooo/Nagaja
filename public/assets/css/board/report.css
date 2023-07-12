@@ -1,0 +1,30 @@
+main.report {
+  margin-bottom: 4.8rem;
+}
+
+main.report section.contents-wrap {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.report ul.contents > li .content {
+  min-height: 4.4rem;
+}
+
+main.report ul.contents li .contents-wrap {
+  padding: 0.8rem 0 0.8rem 11rem;
+}
+
+main.report ul.contents img {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 1;
+}
+
+main.report ul.contents li .extra-info {
+  margin-bottom: 0.8rem;
+}
+
+

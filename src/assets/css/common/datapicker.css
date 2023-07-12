@@ -1,0 +1,31 @@
+div.datepicker {
+  padding: 1rem 0rem 0rem 0rem !important;
+}
+div.datepicker::after {
+  content: '';
+  display: block;
+  clear:both;
+}
+div.datepicker input{
+  width: 100%;
+  height: 2.6rem;
+  line-height: 3.6rem;
+  padding: 0 0.7rem;
+  background-image: url(../../img/icon_calendar_01.svg);
+  background-repeat: no-repeat;
+  background-position: top 0.9rem right 0.7rem;
+  background-size: 1.6rem 1.6rem;
+  border-radius: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+
+div.datepicker > div.uc-area-begin {
+  
+}
+
+
+div.datepicker > div.uc-area-end {
+
+}

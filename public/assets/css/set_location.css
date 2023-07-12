@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+}
+main.set-location {
+  padding: 0;
+  height: calc(100% - 0.8rem);
+  width: 100%;
+}
+main.set-location > div.sel-country {
+  float: none;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  border: none;
+  padding: 0 2rem;
+}
+main.set-location > div.sel-country::after {
+  width: 0.8rem;
+  height: 0.8rem;
+  right: 2.1rem;
+  transform: rotate(45deg) skew(-3deg, -3deg);
+}
+main.set-location > div.sel-country.open::after {
+  transform: rotate(-135deg) skew(-3deg, -3deg);
+}
+main.set-location > div.sel-country > span.current {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main.set-location > div.sel-country > ul {
+  width: 100%;
+}
+main.set-location > div.container-area {
+  height: calc(100% - 5rem);
+  font-size: 0;
+  padding-bottom: 1.8rem;
+}
+main.set-location > div.container-area > ul {
+  width: 50%;
+  margin-block: auto;
+}
+main.set-location > div.container-area > ul.area {
+  float: left;
+  display: none;
+}
+main.set-location > div.container-area > ul.area.show {
+  display: block;
+}
+main.set-location > div.container-area > ul.area-detail {
+  float: right;
+  display: none;
+  height: calc(100% - 5rem);
+  background: #f4f8fd;
+}
+main.set-location > div.container-area > ul.area-detail.show {
+  display: block;
+}
+/* main.set-location > div.container-area > ul > li {
+  display: block;
+  padding: 1.4rem 2rem;
+} */
+main.set-location > div.container-area > ul > li.active {
+  background: #f4f8fd;
+}
+.set-location > div.container-area > ul.area-detail > li.active {
+  background: #eaf1fb;
+}
+.set-location > div.container-area > ul > li > a {
+  font-family: "Noto Sans KR";
+  font-size: 1.6rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+main.set-location > div.container-area > ul > li.active > a {
+  color: #0d4d97;
+}
+button.btn-set-location {
+  position: fixed;
+  bottom: 9rem;
+  left: 0;
+  height: 5.2rem;
+  line-height: 5.2rem;
+  background: #222;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  font-size: 1.8rem;
+  z-index: 9;
+}
+button.btn-set-location > img {
+  margin-top: -0.4rem;
+  margin-left: 0.5rem;
+}
+/* Jdy -추가 */
+
+main.sub.set-location {
+  /* margin-bottom: 11rem; */
+  margin-bottom: 3.3rem;
+}
+main.sub.set-location div.divider {
+  top: 9rem;
+}
+main.sub.set-location ~ button.btn-set-location {
+  bottom: 7rem;
+  left: 0;
+}
+main.sub.set-location .container-area ul:first-child {
+  background-color: #fff;
+}
+main.sub.set-location .container-area ul li {
+  border-bottom: none;
+}

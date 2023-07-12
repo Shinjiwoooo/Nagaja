@@ -1,0 +1,134 @@
+main.market.favorite > ul.prd-list > li {
+  display: block;
+  padding: 1.6rem 1.6rem 1.6rem 12.6rem;
+  border-bottom: 1px solid #E1E1E1;
+  transition: all 0.15s;
+}
+main.market.favorite > ul.prd-list > li:first-child {
+  padding-top: 0.8rem;
+}
+main.market.favorite > ul.prd-list > li > figure {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  width: 9.6rem;
+  height: 9.6rem;
+  transition: all 0.15s;
+  z-index: 1;
+}
+main.market.favorite > ul.prd-list > li:first-child > figure {
+  top: 0.8rem;
+}
+main.market.favorite > ul.prd-list > li > div.detail {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+main.market.favorite > ul.prd-list > li > div.detail > p.shop-name {
+  font-family: 'Noto Sans KR';
+  font-size: 1rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+main.market.favorite > ul.prd-list > li > div.detail > h4 {
+  width: 100%;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 00 0 0.2rem;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: skew(-0.001deg);
+}
+main.market.favorite > ul.prd-list > li > div.detail > p.hash-tag {
+  padding: 0.5rem 0 1.4rem;
+}
+main.market.favorite > ul.prd-list > li > div.detail > p.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-left: 2.2rem;
+}
+main.market.favorite > ul.prd-list > li > div.detail > p.price > span.original {
+  font-size: 1.1rem;
+  color: #9F9F9F;
+  text-decoration: line-through;
+  padding-inline: 1.2rem 0;
+  margin-inline-start: 0.7rem;
+}
+main.market.favorite > ul.prd-list > li > div.detail > p.price::before,
+main.market.favorite > ul.prd-list > li > div.detail > p.price > span.original::before {
+  content: '￦';
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+main.market.favorite > ul.prd-list > li > div.detail > p.price > span.original::before {
+  top: 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-decoration: line-through;
+}
+main.market.favorite > ul.prd-list > li > button.btn-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  font-family: 'Noto Sans KR';
+  font-size: 0;
+  transition: all 0.15s, font-size 0s;
+  transform: skew(-0.001deg);
+}
+main.market.favorite > ul.prd-list > li.closed > div.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.1);
+}
+main.market.favorite > ul.prd-list > li.swiped {
+  padding-left: 5rem;
+  padding-right: 7.6rem;
+  transition: all 0.15s;
+}
+main.market.favorite > ul.prd-list > li.swiped > figure {
+  left: -6rem;
+  transition: all 0.15s;
+}
+main.market.favorite > ul.prd-list > li.swiped > button.btn-delete {
+  width: 6rem;
+  line-height: 100%;
+  background: #0D4D97;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s;
+}
+main.market.favorite > ul.prd-list > li > div.mask {
+  display: none;
+}
+
+main.market.favorite > ul.prd-list > li.closed > div.mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 235, 235, 0.5);
+  z-index: 9;
+}
+main.market.favorite > ul.prd-list > li.closed > div.detail > h4,
+main.market.favorite > ul.prd-list > li.closed > div.detail > p.hash-tag > span,
+main.market.favorite > ul.prd-list > li.closed > div.detail > p.hash-tag > span::before,
+main.market.favorite > ul.prd-list > li.closed > div.detail > p.price {
+  color: #9F9F9F;
+}

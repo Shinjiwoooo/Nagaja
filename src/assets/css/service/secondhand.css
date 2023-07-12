@@ -1,0 +1,424 @@
+.secondhand-market.np {
+  padding-top: 0;
+}
+.second-amount {
+  flex-wrap: wrap;
+  display: flex;
+}
+.square {
+  position: relative;
+  width: 100%;
+}
+.square::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+.square img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+section.tab-menu-n-search {
+  padding: 0.8rem 1.6rem 1.2rem;
+}
+
+section.secondhand-market {
+  padding: 1.5rem 0;
+}
+
+section.secondhand-market ul > li {
+  display: block;
+  padding: 1.8rem 1.6rem 1.8rem 12.4rem;
+  border-bottom: 1px solid #e1e1e1;
+  min-height: 13.2rem;
+}
+
+section.secondhand-market ul > li::before,
+section.secondhand-market ul > li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section.secondhand-market ul > li img {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.6rem;
+  display: block;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+}
+
+li.on-completed {
+  background-color: #f3f3f3;
+  color: #e0e0e0;
+}
+
+li .uc-subject a {
+}
+li .uc-address {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+li .uc-exchange {
+}
+
+li.on-completed .uc-subject a,
+li.on-completed .uc-address,
+li.on-completed .uc-exchange,
+li.on-completed .uc-exchange::before {
+  color: #cccccc;
+}
+
+section.secondhand-market .on-sales .uc-status {
+  color: #0d4d97;
+  font-size: 1.2rem;
+}
+
+section.secondhand-market .uc-subject {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.uc-exchange span {
+  font-size: 1.2rem;
+  padding-top: 0.4rem;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+}
+.uc-exchange .ex-sub span {
+  font-size: 1.1rem;
+  padding-top: 0.4rem;
+}
+.uc-exchange .type-won::before {
+  content: "￦";
+}
+.uc-exchange .type-dollor::before {
+  content: "$";
+}
+
+/**/
+
+section.secondhand-market ul > li.active {
+  background: rgba(33, 119, 228, 0.05);
+}
+section.secondhand-market ul > li.finish {
+  background: #f5f5f5;
+}
+
+section.secondhand-market ul > li > a.thumb > img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+section.secondhand-market ul > li > div > p,
+section.secondhand-market ul > li > div > a.subject,
+section.secondhand-market ul > li > span {
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+section.secondhand-market ul > li > div > p.status {
+  font-size: 1.2rem;
+}
+section.secondhand-market ul > li > div > p.status.on-sale {
+  color: #0d4d97;
+}
+section.secondhand-market ul > li > div > a.subject {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+section.secondhand-market ul > li > div > p.address {
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+section.secondhand-market ul > li > div > p.exchange {
+  padding-left: 2.3rem;
+  font-weight: 700;
+}
+section.secondhand-market._2 ul > li > div > p.exchange {
+  padding-left: 2.8rem;
+}
+section.secondhand-market ul > li > div > p.exchange::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.3rem;
+  text-align: center;
+}
+section.secondhand-market ul > li > div > p.exchange.type-won::before {
+  content: "￦";
+}
+section.secondhand-market ul > li > div > p.exchange.type-dollar::before {
+  content: "$";
+}
+section.secondhand-market ul > li > span.datetime {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.6rem;
+  font-size: 1.2rem;
+  color: #9f9f9f;
+}
+section.secondhand-market > div.content {
+  padding: 0.8rem 1.6rem 0;
+}
+section.secondhand-market.view > div.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+section.secondhand-market > div.content > figure.content-images {
+  width: 100%;
+  overflow: hidden;
+}
+section.secondhand-market
+  > div.content
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem 0 1.6rem;
+}
+section.secondhand-market > div.content > figure.content-images img {
+  width: 100%;
+}
+section.secondhand-market > div.content > div.wr-info {
+  height: 7rem;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1.2rem 0 1.2rem 5.4rem;
+}
+section.secondhand-market > div.content > div.wr-info > img.user-photo {
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 2.3rem;
+}
+section.secondhand-market > div.content > div p,
+section.secondhand-market > div.content > div span {
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+section.secondhand-market > div.content > div.wr-info > p.user-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+}
+section.secondhand-market > div.content > div.wr-info > p.address {
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+section.secondhand-market > div.content > div.wr-info > span.rank {
+  position: absolute;
+  top: 2.5rem;
+  right: 0.6rem;
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+section.secondhand-market > div.content > div.detail {
+  padding: 1rem 0 0;
+}
+section.secondhand-market > div.content > div.detail > p.subject {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+section.secondhand-market > div.content > div.detail > p.info > span {
+  font-size: 1.2rem;
+  color: #bebebe;
+  margin-right: 1.4rem;
+}
+section.secondhand-market > div.content > div.detail > p.inner-content {
+  font-size: 1.3rem;
+  padding: 1.5rem 0 2rem;
+  line-height: 1.9rem;
+  color: #626262;
+  text-align: justify;
+}
+section.secondhand-market > div.content > div.detail > p.extra-info {
+  padding: 0.5rem 0 0;
+}
+section.secondhand-market > div.content > div.detail > p.extra-info > span {
+  font-size: 1.2rem;
+  color: #bebebe;
+  margin-right: 1.4rem;
+}
+main.sub.secondhand-market.list section.search-area {
+  /* padding: 0 1.3rem 0; */
+}
+main.sub.secondhand-market.list section.slide-nav {
+  /* padding: 0 1.5rem 0 1.3rem; */
+}
+
+main.sub.secondhand-market.list section.secondhand-market ul li .uc-address {
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+main.sub.secondhand-market.list
+  section.secondhand-market
+  ul
+  li
+  .uc-exchange
+  .ex-kr {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+main.sub.secondhand-market.list section.secondhand-market ul li .uc-datetime {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.6rem;
+  font-size: 1.2rem;
+  color: #9f9f9f;
+}
+/* 중고마켓 / 디테일 */
+main.secondhand-market ~ .summary-n-chat .price > p.main span.ex-kr.type-won {
+  font-family: "Noto Sans KR";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: normal;
+  transform: skew(-0.001deg);
+}
+
+main.secondhand-market ~ .summary-n-chat .price > span label.ex-kr.type-won {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  margin-right: 1.2rem;
+  transform: skew(-0.001deg);
+}
+
+main.secondhand-market ~ div.summary-n-chat {
+  display: grid;
+  grid-template-columns: minmax(0, 0.3fr) minmax(0, 1fr) minmax(0, 0.5fr);
+  bottom: 7rem;
+  height: auto;
+  width: 100%;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 999;
+  /* padding-right: 2rem; */
+}
+/* 중고마켓 - 리스트 */
+main.sub.secondhand-market.list {
+  top: 0;
+}
+main.sub.secondhand-market.list._2 section.search-area .uc-left {
+  margin-right: 0.6rem;
+}
+main.sub.secondhand-market.list._2 section.search-area .uc-right {
+  padding-left: 0;
+}
+section.secondhand-market {
+  margin-bottom: 3rem;
+}
+.price-chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* height: auto; */
+}
+.price-chat-container .price {
+  flex-grow: 1;
+}
+.price-chat-container button.chat-btn-w3 {
+  position: static;
+  height: 4.6rem;
+  /* margin-right: 1.6rem; */
+  border-radius: 0.4rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0 2rem;
+  line-height: 4.6rem;
+  margin-right: 2rem;
+  /* width: 98%; */
+
+  /* margin-left: 2rem; */
+} 
+section.secondhand-market > ul > li > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+section.secondhand-market ul > li > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+section.secondhand-market ul > li img {
+  position: static;
+
+}
+section.secondhand-market ul > li {
+  padding: 1.8rem;
+}
+section.secondhand-market ul > li > div > a {
+  display: block;
+  flex-grow: 1;
+  margin-left: 1rem;
+  /* width: 100%; */
+  overflow: auto;
+}
+main.sub.secondhand-market.list section.secondhand-market ul li .uc-datetime {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  bottom: auto;
+  right: auto;
+}
+div.summary-n-chat > div.price {
+  width: 100%;
+  padding: 0 0 0 0.5rem;
+}
+div.summary-n-chat > div.price > p.main,
+.second-amount {
+  width: 100%;
+  word-wrap: break-word;
+}
+@media only screen and (max-width: 280px) {
+  .price-chat-container button.chat-btn-w3 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 7rem;
+    /* display: flex; */
+    align-content: flex-end;
+    right: 0;
+    justify-content: flex-end;
+    position: absolute;
+    right: 1rem;
+    padding: 0;
+  }
+  section.secondhand-market ul > li img {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+  main.secondhand-market ~ div.summary-n-chat {
+    grid-template-columns: minmax(0, 0.3fr) minmax(0, 1fr) minmax(0, 0.5fr);
+  }
+  div.summary-n-chat > button.btn-toggle-like {
+    width: 3rem;
+  }
+
+}

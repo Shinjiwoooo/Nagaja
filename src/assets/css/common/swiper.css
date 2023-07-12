@@ -1,0 +1,158 @@
+section.n-focus,
+section.n-menus {
+  padding: 2rem 0 0.6rem;
+  overflow: hidden;
+}
+/* section.n-menus {
+  padding: 2rem 0 0.6rem;
+  overflow: hidden;
+} */
+
+section.n-focus > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding: 0 1.6rem;
+}
+
+/* .swiper > div > div > div {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  margin: 0 0.8rem;
+} */
+
+/* .swiper > div > div > div {
+  display: inline-block;
+  width: 5.5rem;
+  vertical-align: top;
+  margin: 0 0.8rem;
+} */
+.swiper > div > div > div:last-child {
+  margin-right: 0;
+}
+
+section.n-focus > div.swiper figure {
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #eee;
+  border-radius: 1.4rem;
+  margin: auto;
+}
+section.n-menus > div.swiper figure {
+  display: inline-block;
+  /* width: 100%; */
+  vertical-align: top;
+  font-weight: 400;
+  vertical-align: ---;
+}
+section.n-menus > div.swiper figure img {
+  height: 3rem;
+  width: 3.5rem;
+}
+
+.swiper .swiper-slide > div p {
+  height: 3.5rem;
+  padding-top: 0.5rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #222;
+  opacity: 0.8;
+  text-align: center;
+  transform: skew(-0.001deg);
+}
+section.n-menus .swiper-slide > div {
+  margin-bottom: 1rem;
+}
+section.n-focus .swiper-slide > div p {
+  font-weight: 700;
+}
+section.n-menus .swiper-slide > div p {
+  min-height: 4.2rem;
+  font-weight: 400;
+  padding: 0.85rem 0rem 0.6rem;
+  width: 100%;
+}
+
+section.n-focus > div.pagination-n-focus {
+  bottom: -0.6rem;
+  text-align: center;
+}
+
+/* section.n-menus figure > img, */
+section.n-focus figure > img {
+  width: 100%;
+}
+
+section.n-menus .swiper,
+section.n-focus .swiper {
+  margin: 0 0.8rem;
+  position: static;
+}
+
+section.n-menus .swiper .swiper-pagination,
+section.n-focus .swiper .swiper-pagination {
+  position: relative;
+  bottom: 1.2rem;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+  color: #dadada;
+  transition: all 0.2s;
+  padding-top: 1rem;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 2rem;
+  border-radius: 0.4rem;
+  background: #0d4d97;
+  transition: all 0.2s;
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-direction: inherit;
+}
+/* Jdy - 추가 */
+section.n-focus,
+section.n-menus {
+  margin-top: 3rem;
+}
+main.main div.swiper .swiper-wrapper {
+  margin-bottom: 2rem;
+}
+div.swiper-pagination.swiper-pagination-custom.swiper-pagination-horizontal {
+  position: absolute;
+  width: auto;
+  bottom: 3.8rem;
+  left: auto;
+  right: 1.6rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 9;
+}
+
+div.swiper-pagination.swiper-pagination-custom.swiper-pagination-horizontal
+  span {
+  color: #fff;
+}
+@media only screen and (max-width: 280px) {
+  main.main section.n-focus .swiper-slide figure {
+    width: 5rem;
+    height: 5rem;
+  }
+}

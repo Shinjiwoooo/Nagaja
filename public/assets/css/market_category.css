@@ -1,0 +1,79 @@
+main.market.category {
+  padding-bottom: 13rem;
+}
+main.market.category > div.slide-nav {
+  padding: 0 1.6rem;
+}
+main.market.category > div.slide-nav > button.type-to-end {
+  right: 1.6rem;
+}
+main.market.category > section.prd.special {
+  padding-top: 1.2rem;
+}
+main.market.category > section.prd.special > h3 > a {
+  float: right;
+  padding-inline-end: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+}
+main.market.category > section.prd.special > h3 > a::after {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  right: 0.2rem;
+  border-top: 1px solid #222;
+  border-right: 1px solid #222;
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: rotate(45deg);
+}
+main.market.category > section.prd.special > ul {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+main.market.category > section.prd.special > ul > li {
+  margin: 0 0.6rem;
+}
+main.market.category > section.prd.special > ul > li:first-child {
+  margin-left: 0;
+}
+main.market.category > section.prd.special > ul > li:last-child {
+  margin-right: 0;
+}
+main.market.category > section > div.count-order {
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.6rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.market.category > section > div.count-order > .nice-select {
+  float: right;
+  height: 100%;
+  line-height: inherit;
+  padding-right: 0;
+  padding-left: 2rem;
+  border: none;
+}
+main.market.category > section > div.count-order > .nice-select::before {
+  content: '';
+  position: absolute;
+  top: 1.2rem;
+  left: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/icon_order_01.svg) no-repeat center;
+}
+main.market.category > section > div.count-order > .nice-select::after {
+  display: none;
+}
+main.market.category > section > div.count-order > .nice-select .list {
+  width: 8rem;
+}
+}
+main.market.category > section > figure.banner {
+  width: 100%;
+  height: 15rem;
+}

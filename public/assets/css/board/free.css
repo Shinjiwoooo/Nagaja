@@ -1,0 +1,32 @@
+input.form-control {
+  padding : 2px 8px;
+}
+
+main.free-board > div.content > div.wr-content > figure {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: 0;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+main.free-board > div.content > div.wr-content > figure > img {
+  width: 13.5rem;
+  margin-right: 1rem;
+}
+
+
+main.free-board.list > section.latest > ul > li {
+  border-radius: 0;
+}
+main.free-board > section.bottom {
+  height: 16rem;
+  background: #FFF;
+}
+main.free-board > div.content > div.wr-content {
+  padding-bottom: 3rem;
+}
+main.free-board.write {
+  margin-top: 0;
+  padding-bottom: 10rem;
+}

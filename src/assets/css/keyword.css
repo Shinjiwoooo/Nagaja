@@ -1,0 +1,59 @@
+main.keyword {
+  padding: 0.8rem 0 0;
+}
+main.keyword > section > h3 {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0 1.6rem;
+  background: #f3f3f3;
+}
+main.keyword > section > ul {
+  padding: 1.6rem;
+  font-size: 0;
+}
+main.keyword > section > ul > li {
+  width: 8.1rem;
+  height: 3.2rem;
+  line-height: 3rem;
+  padding: 0 0.6rem 0 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+  color: #626262;
+  font-size: 1.4rem;
+  margin: 0 0.3rem 0.8rem;
+}
+main.keyword > section > ul > li:nth-child(4n - 3) {
+  margin-left: 0;
+}
+main.keyword > section > ul > li:nth-child(4n) {
+  margin-right: 0;
+}
+main.keyword > section > ul > li > button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/icon_close_02.svg) no-repeat center;
+}
+main.keyword.register {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+main.keyword.register > div > .nice-select {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+/* Jdy -추가 */
+main.keyword.set,
+main.keyword.register {
+  /* top: 9rem; */
+}
+main.keyword.register div.register_keyword_type ~ input {
+  margin-top: 0.8rem;
+}

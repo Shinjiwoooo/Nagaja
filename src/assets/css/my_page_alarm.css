@@ -1,0 +1,81 @@
+main.alram-list {
+  padding: 0 1.6rem;
+}
+main.alarm-list > div.tab > ul.tab-nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+main.alarm-list > div.tab > ul.tab-nav > li {
+  width: 50%;
+  text-align: center;
+  padding: 1rem 0 1.1rem;
+  border-bottom: 2px solid #e2e7ee;
+  transition: all 0.15s;
+}
+main.alarm-list > div.tab > ul.tab-nav > li.active {
+  border-color: #0d4d97;
+  transition: all 0.15s;
+}
+main.alarm-list > div.tab > ul.tab-nav > li > a {
+  font-size: 1.4rem;
+  color: #bbb;
+  transition: all 0.15s;
+}
+main.alarm-list > div.tab > ul.tab-nav > li.active > a {
+  color: #0d4d97;
+  font-weight: 700;
+  transition: all 0.15s;
+}
+main.alarm-list > div.tab > div.tab-content > ul > li {
+  width: 100%;
+  padding: 1.5rem 0 1.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+main.alarm-list > div.tab > div.tab-content > ul > li > div > p.subject {
+  width: calc(100% - 7rem);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  font-weight: 500;
+  transform: skew(-0.001deg);
+}
+main.alarm-list
+  > div.tab
+  > div.tab-content
+  > ul
+  > li
+  > div
+  > p.subject
+  > span.unchecked {
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  transform: skew(-0.001deg);
+  color: #0d4d97;
+}
+main.alarm-list
+  > div.tab
+  > div.tab-content
+  > ul
+  > li
+  > div
+  > p.subject
+  + span.datetime {
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+  color: #9f9f9f;
+}
+main.alarm-list > div.tab > div.tab-content > ul > li > p.content {
+  padding: 0.8rem 0 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+  color: #9f9f9f;
+}

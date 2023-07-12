@@ -1,0 +1,195 @@
+main.location {
+  padding: 0.8rem 1.6rem 0;
+}
+main.location.search-list,
+main.location.complete {
+  border-bottom: 1px solid #e1e1e1;
+  background: #fff;
+}
+main.location > div:first-child {
+  width: 100%;
+  height: 4rem;
+  padding-left: 3.7rem;
+  background: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+}
+main.location > div:first-child::before {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: 1.1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/icon_search_02.svg) no-repeat center;
+}
+main.location > div:first-child > input {
+  float: right;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 0;
+  font-size: 1.2rem;
+}
+main.location > div.guide {
+  padding: 0 1rem;
+}
+main.location > div.guide > h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+main.location > div.guide > p.description {
+  padding: 1.2rem 0 3rem;
+  color: #222;
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  transform: skew(-0.001deg);
+}
+main.location > div.guide > ul.hint > li {
+  padding: 0 0 2.3rem;
+  color: #222;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+main.location > div.guide > ul.hint > li > p {
+  padding-top: 0.3rem;
+  color: #0d4d97;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+ul.address-list {
+  width: 100%;
+  background: #fff;
+}
+ul.address-list > li {
+  width: 100%;
+  padding: 2rem 1.6rem 2.5rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+ul.address-list > li > p.address-name {
+  padding: 0 0 0.6rem;
+  color: #222;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+ul.address-list > li > p.address-detail,
+div.map-location > div.address-info > p.detail {
+  padding-left: 4.9rem;
+  color: #9f9f9f;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+ul.address-list > li > p.address-detail::before,
+div.map-location > div.address-info > p.detail::before {
+  content: "도로명";
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
+  width: 4.2rem;
+  height: 1.7rem;
+  background: #f5f5f5;
+  border-radius: 0.4rem;
+  color: #9d9d9d;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 1rem;
+  transform: skew(-0.001deg);
+  text-align: center;
+}
+div.map-location > div.address-info > p.detail::before {
+  content: "지번";
+}
+div.map-location {
+  min-height: 38.5rem;
+  background: #fff;
+  padding: 1.9rem 1.6rem 8rem;
+}
+div.map-location #map-area > img {
+  width: 100%;
+}
+div.map-location > div.address-info {
+  padding: 1rem 0;
+}
+div.map-location > div.address-info > p.name {
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+button.btn-set-loc {
+  bottom: 9rem;
+}
+/* Jdy -추가 */
+/* /common/location */
+.set-location > div.container-area > ul {
+  background-color: #fff;
+}
+.set-location > div.container-area > ul > li {
+  border: none;
+}
+main.location {
+  position: absolute;
+  top: 9rem;
+}
+main.location ul.hint {
+  flex-direction: column;
+  display: flex;
+}
+main.location > div.guide {
+  margin-top: 3rem;
+}
+
+/* common/location/ 리스트 */
+ul.address-list li {
+  width: 100%;
+  padding: 2rem 1.6rem 2.5rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+ul.address-list li p.address-name {
+  padding: 0 0 0.6rem;
+  color: #222;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+ul.address-list li p.address-detail {
+  padding-left: 4.9rem;
+  color: #9f9f9f;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+ul.address-list li p.address-detail::before {
+  content: "도로명";
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
+  width: 4.2rem;
+  height: 1.7rem;
+  background: #f5f5f5;
+  border-radius: 0.4rem;
+  color: #9d9d9d;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 1rem;
+  transform: skew(-0.001deg);
+  text-align: center;
+}
+div.map-location {
+  top: 19rem;
+}
+div.divider.search-map {
+  position: absolute;
+  top: 18rem;
+}
+div.map-location > div.address-info {
+  margin-bottom: 2rem;
+}
+main.sub.location.complete {
+  width: 100%;
+}
+main.sub.location.complete ~ .divider {
+  top:9rem;
+}
+main.sub.location.complete ~ .map-location {
+  top: 9rem;
+}

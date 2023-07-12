@@ -1,0 +1,75 @@
+main.notice {
+  border-bottom: none;
+}
+
+.notice > ul.contents {
+  border-top: 1px solid #e1e1e1;
+}
+
+.notice > ul.contents > li {
+  display: block;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.notice > ul.contents > li h3.subject span.category {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.notice > ul.contents > li h3.subject {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.notice > ul.list > li p.content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #626262;
+  line-height: 2rem;
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+
+.notice > ul.list > li div.info {
+  padding-top: 0.7rem;
+}
+
+.notice > ul.list > li div.info span {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  transform: skew(-0.001deg);
+}
+/* Jdy -추가 */
+main.sub.board.notice .notice {
+}
+main.sub.board.notice {
+  /* top: 9rem;
+  margin-bottom: 9rem; */
+}
+main.sub.board.notice .count-order .react-select__control::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("../../img/icon_order_01.svg") no-repeat center;
+}
+main.sub.board.notice .count-order .react-select__control {
+  padding-left: 1rem;
+  border: none;
+}
+main.sub.board.notice .count-order div.react-select__indicator {
+  display: none;
+}
+main.sub.board.notice .count-order .css-1u9des2-indicatorSeparator {
+  opacity: 0;
+}

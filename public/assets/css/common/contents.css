@@ -1,0 +1,101 @@
+/* items sort */
+section.items-sort{
+  margin: 0.8rem 1.6rem 0 ;
+}
+section.items-sort > div > div {
+  width:49%;
+}
+
+
+/* item config */
+section.service-shop {margin-bottom: 12rem;}
+section.service-shop > ul {}
+section.service-shop > ul > li {
+  display: block;
+  padding: 1.8rem 1.6rem 1.8rem 12.4rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+section.service-shop > ul > li a.thumb {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.6rem;
+  display: block;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+}
+
+section.service-shop > ul > li a.thumb > img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+section.service-shop > ul > li > div > p.name {
+  padding: 0.3rem 0 0;
+  font-weight: 700;
+}
+section.service-shop > ul > li > div > p.name > img {
+  width: 5.6rem;
+  margin-left: 0.5rem;
+  margin-top: -0.2rem;
+}
+section.service-shop > ul > li > div > p.ratio > span {
+  font-size: 1.1rem;
+  vertical-align: top;
+}
+section.service-shop > ul > li > div > p.ratio > span.star {
+  display: inline-block;
+  font-weight: 700;
+  padding-right: 1.6rem;
+}
+section.service-shop > ul > li > div > p.ratio > span.star::after {
+  content: '';
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  width: 1px;
+  height: 1rem;
+  background: #BEBEBE;
+}
+section.service-shop > ul > li > div > p.ratio > span.star > img {
+  vertical-align: top;
+  margin-top: 0.1rem;
+}
+section.service-shop > ul > li > div > p.business-hours > span {
+  font-size: 1.2rem;
+}
+section.service-shop > ul > li > div > p.business-hours > span:first-child {
+  color: #9F9F9F;
+}
+section.service-shop > ul > li > div > p.tags {
+  padding-top: 0.8rem;
+}
+section.service-shop > ul > li > div > p.tags > span {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background: #F5F5F5;
+  border-radius: 1rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #616161;
+  margin-right: 0.2rem;
+  transform: skew(-0.001deg);
+}
+section.service-shop > ul > li > div > p.actions {
+  font-size: 0;
+  padding-top: 1rem;
+}
+section.service-shop > ul > li > div > p > button {
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  padding: 0;
+  margin-top:0.8rem;
+  margin-right: 1.2rem;
+}
+section.service-shop > ul > li > div > p > button > img {
+  vertical-align: top;
+  margin-top: 0.1rem;
+  margin-right: 0.4rem;
+}

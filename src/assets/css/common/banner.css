@@ -1,0 +1,73 @@
+/*
+  slide in banner
+*/
+section.slide-banner {
+  /* height: 18rem; */
+  overflow: hidden;
+  font-size: 1rem;
+}
+section.slide-banner .swiper-slide > img {
+  width: 100%;
+}
+
+section.slide-banner .swiper-pagination {
+  position: absolute;
+  width: auto;
+  bottom: 1.8rem;
+  left: auto;
+  right: 1.6rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 9;
+}
+
+/* board swiper banner */
+section.banner-sub {
+  padding-top: 2.4rem;
+}
+
+section.banner-sub > figure {
+  padding: 0 1.6rem;
+}
+
+section.banner-sub {
+  padding: 1.8rem 1.6rem 2.2rem;
+  border-bottom: 1px solid #e1e1e1;
+  background: #fff;
+}
+
+section.banner-sub img {
+  width: 100%;
+}
+section.banner-sub div.pagination-num {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: auto;
+  height: auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1.3rem;
+  z-index: 9;
+}
+section.banner-sub div.pagination-num > span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* Jdy -추가 */
+main.main section.slide-banner {
+  position: relative;
+  top: 4.6rem;
+}

@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+main {
+  padding: 4.6rem 0 0;
+}
+main > section.slide-banner {
+  /* height: 18rem; */
+  overflow: hidden;
+}
+main > section.slide-banner .swiper-slide > img {
+  width: 100%;
+}
+main > section.slide-banner .pagination-num {
+  position: absolute;
+  width: auto;
+  bottom: 1.8rem;
+  left: auto;
+  right: 1.6rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 9;
+}
+main > section.slide-banner .pagination-num > span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+main > section.n-focus {
+  padding: 2rem 0 2.2rem;
+  overflow: hidden;
+}
+main > section.n-focus > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding: 0 1.6rem;
+}
+main > section.n-focus > div.list {
+  padding: 0 0.8rem;
+}
+main > section.n-focus > div.list > ul {
+  font-size: 0;
+}
+main > section.n-focus > div.list > ul > li > div {
+  display: inline-block;
+  width: 5.5rem;
+  vertical-align: top;
+  margin: 0 0.8rem;
+}
+main > section.n-focus > div.list > ul > li > div:last-child {
+  margin-right: 0;
+}
+main > section.n-focus > div.list > ul > li > div > figure {
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #f5f5f5;
+  border-radius: 1.4rem;
+  margin: auto;
+}
+main > section.n-focus > div.list > ul > li > div > p {
+  height: 3.5rem;
+  padding-top: 0.5rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #222;
+  opacity: 0.8;
+  text-align: center;
+  transform: skew(-0.001deg);
+}
+main > section.n-focus > div.pagination-n-focus {
+  bottom: -0.6rem;
+  text-align: center;
+}
+main > section.sub-menu {
+  overflow: hidden;
+}
+main > section.sub-menu > div.list {
+  padding: 3rem 0 1.8rem;
+}
+main > section.sub-menu > div.list > ul > li {
+  font-size: 0;
+}
+main > section.sub-menu > div.list > ul > li > figure {
+  display: inline-block;
+  width: 5.5rem;
+  vertical-align: top;
+  margin: 0 0.85rem 2.5rem;
+}
+main > section.sub-menu > div.list > ul > li > figure:nth-child(5n - 4) {
+  margin-left: 1.6rem;
+}
+main > section.sub-menu > div.list > ul > li > figure:nth-child(5n) {
+  margin-right: 1.6rem;
+}
+main > section.sub-menu > div.list > ul > li > figure > img {
+  height: 3rem;
+}
+main > section.sub-menu > div.list > ul > li > figure > p {
+  height: 4rem;
+  line-height: 1.4rem;
+  padding: 1rem 0 0;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  text-align: center;
+  transform: skew(-0.001deg);
+}
+main > section.sub-menu > div.pagination-sub-menu {
+  bottom: 3rem;
+}
+main > section.exchange-ratio {
+  height: 6rem;
+  line-height: 6rem;
+  padding: 0 7.6rem 0 1.6rem;
+  background: #f5f5f5;
+}
+main > section.exchange-ratio > p {
+  white-space: nowrap;
+}
+main > section.exchange-ratio > p > span {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 300;
+  transform: skew(-0.001deg);
+}
+main > section.exchange-ratio > p > span.v-divider {
+  margin: 0 0.4rem;
+}
+main > section.exchange-ratio > button.btn-calculator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 100%;
+  line-height: 6rem;
+  background: #0d4d97;
+  text-align: center;
+  border-radius: 0;
+}
+main > section.exchange-ratio > button.btn-calculator > img {
+  width: 2rem;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  text-align: center;
+  z-index: 9;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+  color: #dadada;
+  transition: all 0.2s;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 2rem;
+  border-radius: 0.4rem;
+  background: #0d4d97;
+  transition: all 0.2s;
+}
+main > section.main-contents {
+  padding: 2.8rem 0 3.4rem;
+}
+main > section.main-contents > figure {
+  padding: 0 1.6rem;
+}
+main > section.main-contents > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 2.4rem 1.6rem 1.6rem;
+  color: #222;
+}
+main > section.main-contents > ul.place-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 1.6rem 1.5rem;
+  font-size: 0;
+}
+main > section.main-contents > ul.place-list > li {
+  width: 16rem;
+  margin-right: 1rem;
+}
+main > section.main-contents > ul.place-list > li:last-child {
+  margin-right: 0;
+}
+main > section.main-contents > ul.place-list > li > img {
+  width: 100%;
+}
+main > section.main-contents > ul.place-list > li > p.name {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 1rem 0 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+main > section.main-contents > ul.place-list > li > p.name-en {
+  font-family: "Noto Sans KR";
+  font-size: 1.3rem;
+  transform: skew(-0.001deg);
+}
+main > section.main-contents > ul.place-list > li > p.tags {
+  padding: 1rem 0;
+}
+main > section.main-contents > ul.place-list > li > p.tags > span {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background: #f5f5f5;
+  border-radius: 1rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #616161;
+  margin-right: 0.4rem;
+  transform: skew(-0.001deg);
+}
+main > section.main-contents > ul.place-list > li > p.event {
+  padding-left: 1.5rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d4d97;
+  white-space: normal;
+  transform: skew(-0.001deg);
+}
+main > section.main-contents > ul.place-list > li > p.event::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/icon_star_02.svg) no-repeat center;
+}

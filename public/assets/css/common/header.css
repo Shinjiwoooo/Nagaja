@@ -1,0 +1,12 @@
+/* 메인베너 공용 */
+#header button.btn-back {
+  font-size: 0;
+}
+
+#header button.btn-back {
+  position: absolute;
+  top: 1.4rem;
+  left: 1.9rem;
+  width: 1.8rem;
+  height: 1.5rem;
+}

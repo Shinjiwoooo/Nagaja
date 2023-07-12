@@ -1,0 +1,643 @@
+html,
+body {
+  height: 100%;
+}
+main.reservation {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+}
+main.reservation.info {
+  padding-bottom: 10.5rem;
+}
+main.biz.reservation {
+  padding: 0 0 12.5rem;
+}
+main.biz.reservation.default {
+  padding-bottom: 0;
+  background: #f5f5f5;
+}
+main.biz.reservation > div.shop-info {
+  min-height: 11.8rem;
+  padding-top: 0.8rem;
+  background: #fff;
+}
+main.reservation > div.slide-nav {
+  padding: 0.8rem 4.8rem 1.6rem 1.6rem;
+}
+main.reservation > div.slide-nav > ul {
+  padding: 0;
+}
+main.reservation > div.slide-nav > button.type-to-end {
+  top: 0.8rem;
+  right: 1.6rem;
+}
+main.reservation > ul.menu-list {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  background: #fff;
+}
+main.reservation > ul.menu-list > li {
+  width: 25%;
+  height: 5.5rem;
+  line-height: 5.4rem;
+  border-right: 1px solid #e1e1e1;
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  text-align: center;
+  transform: skew(-0.001deg);
+}
+main.reservation > ul.menu-list > li:last-child {
+  border-right: none;
+}
+main.reservation > ul.menu-list > li.active {
+  background: #000;
+  color: #fff;
+}
+main.reservation > ul.menu-list > li.active a {
+  color: #fff;
+}
+main.reservation > ul.menu-list > li > input#rangepicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0);
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
+main.reservation > ul.list {
+  height: calc(100% - 11.3rem);
+  padding: 1.8rem 1.6rem 8rem;
+  overflow-y: auto;
+}main.reservation > ul.list.all {
+  background: #f5f5f5;
+}
+main.biz.reservation > ul.list {
+  height: calc(100% - 17.5rem);
+  padding-bottom: 8rem;
+}
+main.reservation.detail > ul.list {
+  height: calc(100% - 26rem);
+}
+main.reservation > ul.list > li {
+  display: block;
+  padding: 1.5rem 1.8rem 1.8rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+main.reservation > ul.list > li:not(.expire-reservation) {
+  background: #fff;
+}
+main.biz.reservation > ul.list > li {
+  padding-bottom: 1.6rem;
+}
+main.reservation > ul.list > li.active {
+  border-color: #0d4d97;
+}
+main.reservation > ul.list > li.closed {
+  background: #eaeaea;
+}
+main.reservation > ul.list > li > p {
+  padding: 0.2rem 0;
+  width: 100%;
+}
+main.biz.reservation > ul.list > li > p {
+  padding: 0;
+}
+main.reservation > ul.list > li > p:first-child {
+  padding: 0 0 0.7rem;
+  padding: 0.3rem 0 0;
+  display: flex;
+  /* width: 90%; */
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+.change-status-available {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem
+}
+main.biz.reservation > ul.list > li > p:first-child {
+  padding: 0 0 0.3rem;
+}
+main.reservation > ul.list > li.closed.complete > p {
+  padding-bottom: 0;
+}
+main.reservation > ul.list > li > p > span,
+.change-status-available span.status {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+
+}
+main.biz.reservation > ul.list > li > p > span.name > span.status {
+  display: inline-block;
+  padding-left: 2.2rem;
+  vertical-align: top;
+  margin-top: 0.1rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #0d4d97;
+  transform: skew(-0.001deg);
+}
+
+main.reservation > ul.list > li > p > span.shop {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-right: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+}
+main.reservation > ul.list > li > p > span.status,
+.change-status-available span.status {
+  display: inline-block;
+  padding-left: 1.5rem;
+  color: #0d4d97;
+  min-width: fit-content;
+}
+
+main.reservation > ul.list > li > p > span.status.cancel,
+.change-status-available span.status.cancel {
+  color: #FF4755;
+}
+main.reservation > ul.list > li > p > span.status::before,
+.change-status-available span.status::before
+ {
+  content: "";
+  top: 0.2rem;
+  left: 0;
+  background-size: 1.3rem 1.3rem;
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+main.reservation > ul.list > li > p > span.status.cancel::before,
+.change-status-available span.status.cancel::before {
+  background-image: url('../img/x-circle.svg');
+  background-repeat: no-repeat center;
+}
+main.reservation > ul.list > li > p > span.status.confirmed::before,
+.change-status-available span.status.confirmed::before {
+  background-image: url('../img/check-circle.svg');
+  background-repeat: no-repeat center;
+}
+main.reservation > ul.list > li.cancel > p span.status,
+main.biz.reservation > ul.list > li.cancel > p > span.name > span.status {
+  color: #ff4755;
+}
+main.biz.reservation > ul.list > li > p > span.range {
+  letter-spacing: -0.02rem;
+}
+main.reservation > ul.list > li.processing > p > span.status {
+  padding-left: 0;
+  vertical-align: top;
+  margin-top: 0.1rem;
+}
+main.biz.reservation > ul.list > li.processing > p > span.name > span.status {
+  padding-left: 0.5rem;
+}
+main.reservation > ul.list > li.fixed > p span.status::before,
+main.reservation > ul.list > li.complete > p span.status::before,
+main.reservation > ul.list > li.cancel > p span.status::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: -0.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+main.biz.reservation > ul.list > li.complete > p span.status::before,
+main.biz.reservation > ul.list > li.fixed > p span.status::before,
+main.biz.reservation > ul.list > li.cancel > p span.status::before {
+  left: 0.5rem;
+}
+main.reservation > ul.list > li.fixed > p > span.status::before,
+main.reservation > ul.list > li.complete > p > span.status::before {
+  background: url(../img/icon_reservation_complete_01.svg) no-repeat center;
+}
+main.biz.reservation > ul.list > li.complete > p span.status::before {
+  background: url(../img/icon_reservation_complete_01.svg) no-repeat center;
+}
+main.reservation > ul.list > li.cancel > p span.status::before {
+  background: url(../img/icon_reservation_cancel_01.svg) no-repeat center;
+}
+main.reservation > ul.list > li > p > span.title {
+  color: #9f9f9f;
+  margin-right: 1rem;
+}
+main.reservation > ul.list > li.closed > p:first-child > span.title {
+  color: #222;
+  margin-left: 1.5rem;
+}
+main.biz.reservation > ul.list > li.closed > p:first-child > span.title {
+  margin-left: 0;
+  color: #9f9f9f;
+}
+main.reservation > ul.list > li > button {
+  position: absolute;
+  right: 1.3rem;
+}
+main.reservation > ul.list > li button.btn-delete {
+  top: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../img/btn_close_01.svg) no-repeat center;
+  opacity: 0.25;
+}
+
+main.reservation > ul.list > li > button.btn-add-friend {
+  width: 1.4rem;
+  height: 1.2rem;
+  bottom: 1.6rem;
+  right: 1.4rem;
+  background: url(../img/icon_add_friend_01.svg) no-repeat center;
+}
+main.reservation > ul.list > li > div.user-action {
+  padding: 1.2rem 0 0;
+  align-items: center;
+}
+main.reservation > ul.list > li > div.user-action > a {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  transform: skew(-0.001deg);
+}
+main.reservation > ul.list > li > div.user-action > a::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+main.reservation > ul.list > li > div.user-action > a.btn-try-chat::before {
+  background: url(../img/icon_chat_02.svg) no-repeat center;
+}
+main.reservation > ul.list > li > div.user-action > a.btn-try-call::before {
+  background: url(../img/icon_phone_02.svg) no-repeat center;
+}
+main.reservation > ul.list > li > div.user-action > a.btn-try-chat::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: 1.6rem;
+  width: 1px;
+  height: 1rem;
+  background: #bebebe;
+}
+main.reservation > div.shop-info {
+  padding: 0 1.6rem 1.6rem 12.6rem;
+}
+main.reservation > div.shop-info > img {
+  position: absolute;
+  top: 0;
+  left: 1.6rem;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+  z-index: 1;
+}
+main.biz.reservation > div.shop-info > img {
+  top: 0.8rem;
+}
+main.reservation > div.shop-info > h3.name {
+  width: 100%;
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 0 0.2rem;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: skew(-0.001deg);
+}
+main.biz.reservation > div.shop-info > h3.name > button.btn-share {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: -0.3rem;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  background: url(../img/icon_share_01.svg) no-repeat center;
+}
+main.biz.reservation > div.shop-info > p {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+main.reservation  div.shop-info  p {
+  padding: 0.1rem 0 0.2rem;
+}
+main.reservation  div.shop-info p span.title {
+  width: 4.3rem;
+  color: #9f9f9f;
+  display: inline-block;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+main.reservation div.shop-info p span {
+  display: inline-block;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+main.reservation > div.shop-info > div.user-action {
+  padding: 0.3rem 0;
+}
+main.reservation > div.shop-info > div.user-action > a {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  transform: skew(-0.001deg);
+}
+main.reservation > div.shop-info > div.user-action > a::before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+main.reservation > div.shop-info > div.user-action > a.btn-try-chat::before {
+  background: url(../img/icon_chat_02.svg) no-repeat center;
+}
+main.reservation > div.shop-info > div.user-action > a.btn-try-call::before {
+  background: url(../img/icon_phone_02.svg) no-repeat center;
+}
+main.reservation > div.shop-info > div.user-action > a.btn-try-chat::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: 1.6rem;
+  width: 1px;
+  height: 1rem;
+  background: #bebebe;
+}
+main.reservation > div.shop-info > div.extra-info {
+  margin-left: -11rem;
+  padding-top: 1.5rem;
+}
+main.reservation > div.shop-info > div.extra-info > span {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+  font-weight: 700;
+  color: #0d4d97;
+}
+.reservation-info {
+  margin-bottom: 7rem;
+}
+main.reservation > div.reservation-info > h3 {
+  padding: 1.8rem 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1.4rem;
+}
+main.reservation > div.reservation-info > ul.detail {
+  padding: 0.8rem 1.6rem;
+}
+main.reservation > div.reservation-info > ul.detail > li {
+  display: block;
+  padding: 0.8rem 0;
+}
+main.reservation > div.reservation-info > ul.detail > li > span:first-child {
+  display: inline-block;
+  width: 7rem;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+main.reservation
+  > div.reservation-info
+  > ul.detail
+  > li.request
+  > span:first-child,
+main.reservation
+  > div.reservation-info
+  > ul.detail
+  > li.history
+  > span:first-child {
+  vertical-align: top;
+}
+main.reservation > div.reservation-info > ul.detail > li.request > div,
+main.reservation > div.reservation-info > ul.detail > li.history > div {
+  float: right;
+  width: calc(100% - 7.3rem);
+}
+main.reservation > div.reservation-info > ul.detail > li.request > div {
+  line-height: 2rem;
+}
+main.reservation > div.reservation-info > ul.detail > li.history > div > div {
+  padding: 1rem 1.6rem 1.5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+main.reservation
+  > div.reservation-info
+  > ul.detail
+  > li.history
+  > div
+  > div
+  > p {
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+main.reservation
+  > div.reservation-info
+  > ul.detail
+  > li.history
+  > div
+  > div
+  > p:first-child {
+  font-size: 1.2rem;
+  color: #bebebe;
+  padding-bottom: 0.2rem;
+}
+main.reservation > div.memos {
+  padding: 2rem 1.6rem 0;
+}
+main.reservation > div.memos > div.memo {
+  margin-bottom: 1.2rem;
+}
+main.reservation > div.memos > div.memo > span,
+main.reservation > div.memos > div.history > span {
+  display: inline-block;
+  width: 7rem;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+main.reservation > div.memos > div.memo > div,
+main.reservation > div.memos > div.history > div {
+  float: right;
+  width: calc(100% - 7.3rem);
+}
+main.reservation > div.memos > div.memo > div > textarea {
+  height: 6rem;
+}
+main.reservation > div.reservation-info > ul.detail > li.history > div > div {
+  padding: 1rem 1.6rem 1.5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+main.reservation > div.memos > div.history > div > div {
+  padding: 1.2rem 1.6rem;
+  background: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+main.reservation > div.memos > div.history > div > div > p {
+  font-family: "Noto Sans KR";
+  transform: skew(-0.001deg);
+}
+main.reservation > div.memos > div.history > div > div > p.datetime {
+  font-size: 1.2rem;
+  color: #bebebe;
+}
+main.reservation > div.memos > div.history > div > div > p.content {
+  line-height: 2rem;
+}
+main.reservation section.slide-nav {
+  padding: 0 1.6rem 0;
+}
+main.reservation section.slide-nav button.type-to-end {
+  right: 1.6rem;
+}
+main.sub.reservation {
+  /* top: 9rem; */
+}
+main.reservation .memo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.reservation .memo-container button.btn-edit {
+  min-width: 5rem;
+  margin-left: 1rem;
+}
+.expire-reservation {
+  background-color: #E1E1E1 !important;
+}
+div.content-wrap {
+  display: block;
+  padding: 1.6rem 1.6rem 1.6rem 12.6rem;
+  /* border-bottom: 1px solid #E1E1E1; */
+  transition: all 0.15s;
+}
+div.content-wrap > img {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  width: 9.6rem;
+  height: 9.6rem;
+  transition: all 0.15s;
+  z-index: 1;
+}
+div.content-wrap > h3.name {
+  width: 100%;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 0 0.2rem;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: skew(-0.001deg);
+  padding-top: 0;
+}
+div.content-wrap > h3.name button {
+  padding: 0 0.2rem;
+}
+.icon-btn-share,
+.icon-btn-try-chat {
+  position: static;
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: bottom;
+  margin: 0.2rem 0.4rem;
+}
+div.content-wrap p.address,
+div.content-wrap p.phone {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  transform: skew(-0.001deg);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+div.user-action {
+  padding: 0.3rem 0;
+  display: flex;
+  vertical-align: bottom;
+  line-height: 1.8rem;
+}
+div.btn-try-chat {
+  border-right: 0.3px solid #e1e1e1;
+  padding-right: 0.5rem;
+}
+div.btn-try-chat > a,
+div.btn-try-call > a {
+  position: relative;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+div.btn-try-call {
+  padding-left: 0.5rem;
+}
+.icon-btn-try-call {
+  position: static;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+#wrapper-datepicker .available-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-flow: row;
+}
+#wrapper-datepicker .available-list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#wrapper-datepicker .available-list > li.btn-selected {
+  background-color: #1d5d90 !important;
+}
+.available-person {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.available-person span {
+  margin: 0 1rem;
+}

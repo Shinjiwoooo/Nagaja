@@ -1,0 +1,78 @@
+main.sub.cert .area-form .react-select-container {
+  width: 30%;
+  margin-right: 0.5rem;
+}
+main.sub.cert > div:not(.nm) {
+  padding: 3rem 0 0;
+}
+main.sub.cert > div.nm {
+  padding: 1.2rem 0rem;
+}
+main.sub.cert > div > h3.title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+main.sub.cert > div > div.area-form {
+  margin: 0.4rem 0 0.8rem;
+}
+main.sub.cert > div > div.area-form > .sel-country-code {
+  width: 6rem;
+  height: 4.4rem;
+  line-height: 4.2rem;
+  padding-left: 0.8rem;
+  padding-right: 2.6rem;
+  /* margin-bottom: 0.8rem; */
+  margin-right: 0.5rem;
+}
+main.sub.cert > div > div.area-form > .sel-country-code::after {
+  top: calc(50% - 0.2rem);
+  right: 1rem;
+}
+main.sub.cert > div > div.area-form > .sel-country-code + input {
+  float: right;
+  width: calc(100% - 6.4rem);
+}
+main.sub.cert > div > div.area-form > .cert-left-time {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 1.4rem;
+  color: #ff4755;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+main.sub.cert > div > div.area-form > .cert-left-time.show {
+  visibility: visible;
+  opacity: 1;
+}
+/* Jdy -추가 */
+main.sub.cert > div > div.area-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main.sub.cert > div > div.area-form .css-b62m3t-container {
+  width: 8rem;
+}
+main.sub.cert > div > div.area-form .css-1dimb5e-singleValue {
+  width: 8rem;
+}
+
+main.sub.cert > div > div.area-form .uc-w30 {
+  flex: 1;
+}
+main.sub.cert > div > div.area-form .css-1fdsijx-ValueContainer {
+  padding-left: 0.5rem;
+}
+main.sub.cert > div > div.area-form .uc-w70 {
+  flex-grow: 1;
+} */
+
+div#ui-popup.popup-wrap .popup header {
+  top: 0;
+}
+div#ui-popup.popup-wrap .popup header ~ main.sub.cert {
+  top: 4rem;
+}

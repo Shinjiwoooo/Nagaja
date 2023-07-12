@@ -1,0 +1,17 @@
+.datepicker {
+}
+.datepicker > div > span {
+  line-height: 3.8rem;
+}
+.datepicker input {
+  line-height: 3.8rem;
+  height: 3.8rem;
+}
+main.sub.my-page.message ul.list li {
+  width: 100%;
+}
+main.sub.my-page.message ul.list li div.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

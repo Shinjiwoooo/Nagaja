@@ -1,0 +1,2665 @@
+
+
+/* CSS TABLE STYLES */
+.css-table {
+  display: table;
+  }
+  
+  .css-table-header {
+  display: table-header-group;
+  font-weight: bold;
+  background-color: rgb(191, 191, 191);
+  }
+  
+  .css-table-body {
+  display: table-row-group;
+  }
+  
+  .css-table-row {
+  display: table-row;
+  }
+  
+  .css-table-header div,
+  .css-table-row div {
+  display: table-cell;
+  padding: 0 6px;
+  }
+  
+  .css-table-header div {
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  }
+
+
+  
+
+/*
+ * main 에서 사용하는 공용여백
+ */
+main.add-padding {
+  padding : 0.8rem 1.6rem 0;
+}
+section {
+  padding: 0rem;
+  margin: 0rem;
+}
+section.count-order {
+  height: 3.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 1rem;
+}
+section.count-order > div {
+  height : 100%;
+  vertical-align: baseline;
+}
+span.count {
+  margin-left: 0.8rem;
+}
+
+section > .initems {
+  display: flex;
+}
+
+section > .initems > .right {
+  margin-left : auto;
+}
+
+section ul.contents > li {
+  display: block;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+section ul.contents > li > img {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 1;
+}
+.contents .category {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.contents .subject { 
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.contents .content { 
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #626262;
+  line-height: 2rem;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+.contents .info { 
+  padding-top: 0.4rem;
+}
+.contents span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+  line-height: 1.8rem;
+}
+
+.contents span.comment image { 
+  width: 1.4rem;
+  margin-top: -0.2rem;
+  margin-right: 0.2rem;
+}
+
+.foot-button {
+  margin-bottom: 8.8rem;
+}
+/***/
+
+
+
+
+div.search-area > div.sel-type > span.current {
+  font-size: 1.2rem;
+}
+div.search-area > div.sel-type.open .list {
+  width: 9rem;
+}
+div.search-area > input {
+  width: 100%;
+  height: 3.6rem;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding-right: 3.6rem;
+  color: #222;
+}
+div.search-area > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: #000;
+  border-radius: 0;
+  line-height: 3.4rem;
+}
+div.search-area > button > img {
+  margin-top: -0.3rem;
+}
+main.board {
+  padding: 0.8rem 1.6rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.board > div.content > p.category {
+  color: #222;
+  margin-bottom: 3px;
+}
+main.board > div.content > p.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+main.board > div.content > div.wr-info {
+  padding: 1.4rem 0 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+main.board > div.content > div.wr-info > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+main.board > div.content > div.wr-info > span.wr-id {
+  display: inline-block;
+  padding-right: 1rem;
+}
+main.board > div.content > div.wr-info > span.wr-id::before {
+  content: '·';
+  position: absolute;
+  top: 0.1rem;
+  right: 0.3rem;
+}
+main.board > div.content > div.wr-info > span.wr-view {
+  float: right;
+}
+main.board > div.content > div.wr-content {
+  min-height: 20rem;
+  padding: 1.6rem 0;
+  color: #626262;
+  line-height: 1.9rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: justify;
+}
+main.board > div.content > div.wr-content > img {
+  width: 100%;
+  border-radius: 0.4rem;
+  margin-top: 1.4rem;
+}
+main.board > div.content > div.wr-content > figure:first-child,
+main.report-missing > div.content > div.wr-content > figure:first-child,
+main.job > div.content > div.wr-content > figure:first-child,
+main.board > div.content > div.wr-content > img:first-child {
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+}
+main.board.common-board > div.content > div.wr-content {
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  transform: skew(-0.001deg);
+  border: none;
+}
+main.board > div.content > div.report {
+  padding: 2rem 0;
+  color: #626262;
+}
+main.board > div.content > div.report > a {
+  float: right;
+  color: inherit;
+}
+main.board > div.content > div.report > a > img {
+  margin-top: -0.5rem;
+}
+div.container-comment.common-board, div.container-comment.suggestion {
+  padding-bottom: 5.2rem;
+}
+div.container-comment > ul.comment-list > li {
+  display: block;
+  width: 100%;
+  padding: 1.6rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+div.container-comment > ul.comment-list > li.my {
+  background: #F4F8FD;
+}
+div.container-comment > ul.comment-list > li > p {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+div.container-comment > ul.comment-list > li > p.id {
+  color: #222;
+}
+div.container-comment > ul.comment-list > li > p.content {
+  padding: 0.5rem 0;
+  color: #626262;
+  text-align: justify;
+}
+div.container-comment > ul.comment-list > li > p.datetime {
+  font-size: 1.2rem;
+  color: #9F9F9F;
+}
+div.container-comment > ul.comment-list > li > p.datetime > a {
+  float: right;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+  color: #9F9F9F;
+}
+div.container-comment > ul.comment-list > li > p.locked {
+  color: #626262;
+}
+div.container-comment > ul.comment-list > li.my > button.btn-del-comment {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+}
+div.container-comment > ul.comment-list.loading > li > p.id,
+div.container-comment > ul.comment-list.loading > li > p.content,
+div.container-comment > ul.comment-list.loading > li > p.datetime > span,
+div.container-comment > ul.comment-list.loading > li > p.datetime > a,
+div.container-comment > ul.comment-list.loading > li.my > button.btn-del-comment {
+  background: #EEE;
+  -webkit-animation: skeleton-opacity 1.2s infinite ease-in-out;
+  animation: skeleton-opacity 1.2s infinite ease-in-out;
+}
+div.container-comment > ul.comment-list.loading > li > p {
+  height: 2.1rem;
+}
+div.container-comment > ul.comment-list.loading > li > p.id {
+  width: 14.3rem;
+  margin-bottom: 0.5rem;
+}
+div.container-comment > ul.comment-list.loading > li > p.content {
+  margin-bottom: 0.5rem;
+}
+div.container-comment > ul.comment-list.loading > li > p.datetime {
+  background: transparent;
+}
+div.container-comment > ul.comment-list.loading > li > p.datetime > span {
+  background: #EEE;
+  display: inline-block;
+  width: 14.3rem;
+  height: 1.6rem;
+}
+div.container-comment > ul.comment-list.loading > li > p.datetime > a {
+  width: 4.8rem;
+  height: 1.6rem;
+  background: #EEE;
+}
+div.container-comment > ul.comment-list.loading > li.my > button.btn-del-comment {
+  right: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: #EEE;
+  border-radius: 0;
+}
+
+div.container-comment > div {
+  padding: 1.9rem 1.6rem;
+}
+div.container-comment > div > input.input-comment {
+  width: 100%;
+  height: 4.4rem;
+  background: #F5F5F5;
+  border: 1px solid #E1E1E1;
+  font-family: 'Noto Sans KR';
+  padding: 0 1.7rem;
+  border-radius: 2.2rem;
+  transform: skew(-0.001deg);
+}
+div.container-comment > div > button.btn-write-comment {
+  position: absolute;
+  top: 2.1rem;
+  right: 1.8rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #0D4D97;
+  background-image: url(../../img/icon_arrow_right_01.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2.4rem 2.4rem;
+}
+/* 공통 게시판 */
+main.common-board.list {
+  padding: 0;
+}
+
+main.common-board.list > section.latest {
+  background: #FFF;
+  padding: 1.5rem 0 1rem;
+  margin-top: 0.8rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.common-board.list > section.latest > h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  padding: 0 1.6rem 1.4rem ;
+}
+main.common-board.list > section.latest > ul:not(.order) {
+  white-space: nowrap;
+  overflow: auto;
+  padding-bottom: 1.4rem;
+}
+main.common-board.list > section.latest > ul > li {
+  width: 31.5rem;
+  padding: 1.7rem 1.6rem 2.2rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.4rem;
+  margin-left: 0.8rem;
+}
+main.common-board.list > section.latest > ul > li:first-child {
+  margin-left: 1.6rem;
+}
+main.common-board.list > section.latest > ul > li:last-child {
+  margin-right: 1.6rem;
+}
+main.common-board.list > section.latest > ul > li > div.info {
+  padding-left: 4.5rem;
+}
+main.common-board.list > section.latest > ul > li > div.info > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.5rem;
+}
+main.common-board.list > section.latest > ul > li > div.info > p.name {
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  color: #222;
+  transform: skew(-0.001deg);
+}
+main.common-board.list > section.latest > ul > li > div.info > p.etc > span {
+  color: #9F9F9F;
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+  font-size: 1.2rem;;
+  transform: skew(-0.001deg);
+}
+main.common-board.list > section.latest > ul > li > div.info > p.etc > span.datetime {
+  display: inline-block;
+  padding-left: 1.1rem;
+}
+main.common-board.list > section.latest > ul > li > div.info > p.etc > span.datetime::before {
+  content: '';
+  position: absolute;
+  top: 0.8rem;
+  left: 0.4rem;
+  width: 2px;
+  height: 2px;
+  background: #9F9F9F;
+}
+main.common-board.list > section.latest > ul > li > p.subject {
+  padding: 1.8rem 0 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+  color: #222;
+}
+main.common-board.list > section.latest > ul > li > p.content {
+  padding-right: 4.7rem;
+  font-family: 'Noto Sans KR';
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #626262;
+  transform: skew(-0.001deg);
+}
+main.common-board.list > section.latest > ul > li > p.content > a,
+main.common-board.list > section.latest > ul > li > p.more > a {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.4rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+  color: #BEBEBE;
+}
+main.common-board.list > section.latest.question {
+  margin-top: 0;
+}
+main.common-board.list > section.latest.blog {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+main.common-board.list > section.latest.blog > ul.order {
+  background: transparent;
+  padding: 1rem 1.6rem;
+  text-align: right;
+}
+main.common-board.list > section.latest.blog > ul.order > li {
+  border: none;
+  margin: 0;
+  width: auto;
+  padding: 0;
+  padding-left: 2rem;
+}
+main.common-board.list > section.latest.blog > ul.order > li > a {
+  font-size: 1.2rem;
+  color: #9F9F9F;
+}
+main.common-board.list > section.latest.blog > ul.order > li > a.active {
+  color: #222;
+  font-weight: 700;
+}
+main.common-board.list > section.latest.blog > ul.content-item {
+  padding-bottom: 0;
+}
+main.common-board.list > section.latest.blog > ul.content-item > li {
+  display: block;
+  width: 100%;
+  background: #FFF;
+  border-left: 0px;
+  border-right: 0px;
+  margin: 0;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0;
+}
+main.common-board.list > section.latest.blog > ul.content-item > li > p.subject {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+main.common-board.list > section.latest.blog > ul.content-item > li > p.content {
+  white-space: normal;
+  padding: 0;
+  text-overflow: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+main.common-board.list > section.latest.blog > ul.content-item > li > p.more > a {
+  position: static;
+  bottom: auto;
+  right: auto;
+}
+main.common-board.list > section.latest.blog > ul.content-item > li > figure {
+  padding: 2rem 0 1rem;
+  white-space: nowrap;
+  overflow: auto;
+  margin-bottom: 1rem;
+  font-size: 0;
+}
+main.common-board.list > section.latest.blog > ul.content-item > li > figure > img {
+  width: 7.7rem;
+  margin-right: 0.5rem;
+  border-radius: 0.4rem;
+}
+ul.user-action-list {
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+ul.user-action-list > li {
+  margin-right: 1.2rem;
+  color: #BEBEBE;
+  font-size: 1.2rem;
+}
+ul.user-action-list > li > span {
+  color: inherit;
+  font-size: inherit;
+}
+
+
+/* 글쓰기 */
+main.write {
+  padding: 0 1.6rem 7rem;
+  margin-top: -0.8rem;
+}
+main.write > div.container {
+  padding: 0.7rem 0 0;
+}
+main.write > div.container > div {
+  padding: 1.7rem 0 0.3rem;
+}
+main.write > div.container > div.target-brand {
+  padding-top: 0;
+}
+main.write > div.container > div.content {
+  font-size: 0;
+}
+main.write > div.container > div > p,
+main.job.write > div.container > div.area > div > p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+main.write > div.container > div.category > p {
+  margin-top: 0.8rem;
+}
+main.write > div.container > div.target-brand > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  color: #222;
+  transform: skew(-0.001deg);
+}
+main.write > div.container > div.category > div.nice-select {
+  float: none;
+  width: 100%;
+  margin-top: 0.9rem;
+}
+main.write > div.container > div.category > div.nice-select > ul.list, 
+main.write > div.container > div.category > div.nice-select > ul.list > li {
+  width: 100%;
+}
+main.write > div.container > div.content > textarea {
+  height: 25rem;
+}
+main.write > div.container > div.attach-image {
+  padding-bottom: 2.8rem;
+}
+main.write > div.container > div.attach-image > ul {
+  white-space: nowrap;
+  margin-top: 0.6rem;
+  font-size: 0;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+}
+main.write > div.container > div.attach-image > ul > li {
+  width: 7.7rem;
+  height: 7.7rem;
+  margin-left: 0.3rem;
+  vertical-align: top;
+}
+main.write > div.container > div.attach-image > ul > li > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 7.2rem;
+  height: 7.2rem;
+}
+main.write > div.container > div.attach-image > ul > li:first-child {
+  margin-left: 0;
+}
+main.write > div.container > div.attach-image > ul > li:first-child > div {
+  border: 1px solid rgba(33, 119, 228, 0.3);
+  padding: 1.4rem 0 0;
+  text-align: center;
+}
+main.write > div.container > div.attach-image > ul > li:first-child > div > p.upload-state {
+  font-size: 0;
+}
+main.write > div.container > div.attach-image > ul > li:first-child > div > p.upload-state > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.1rem;
+  color: rgba(33, 119, 228, 0.3);
+  transform: skew(-0.001deg);
+}
+main.write > div.container > div.attach-image > ul > li:not(:first-child) > button.btn-del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/btn_close_02.svg) no-repeat center;
+  z-index: 9;
+}
+main.write > div.container > div.attach-image > ul > li:not(:first-child) > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main.write > div.container > button.btn-send-report {
+  position: fixed;
+  bottom: 9rem;
+  left: 0;
+  width: calc(100% + 3.2rem);
+  z-index: 9;
+}
+main.write.common-board > div.container > div.category {
+  padding-top: 0;
+}
+main.write.common-board > div.container > div.category > .nice-select {
+  height: 4rem;
+  line-height: 3.8rem;
+}
+main.write.common-board > div.container > div.category > .nice-select .option.disabled {
+  color: #BEBEBE;
+}
+/* main.write.common-board > div.container > div.subject > input,
+main.write.common-board > div.container > div.content > textarea {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+} */
+/* main.write.common-board > div.container > div.subject > input {
+  height: 4rem;
+} */
+main.write.common-board > div.container > div.attach-image {
+  padding-bottom: 0;
+}
+main.write.common-board > div.container > div.attach-file {
+  padding-top: 0.7rem;
+}
+main.write > div.container > div.attach-file > label {
+  position: absolute;
+  top: 4.4rem;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  color: #222;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  outline: none;
+  border-radius: 0.4rem;
+  z-index: 9;
+}
+main.write > div.container > div.attach-file > label::after {
+  content: '';
+  position: absolute;
+  /* top: 0.8rem; */
+  right: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../../img/icon_attach_file_01.svg) no-repeat center;
+}
+main.write.job > div.container > div.attach-file > label {
+  top: 4.4rem;
+}
+main.write > div.container > div.attach-file > input.file-name {
+  height: 4rem;
+  line-height: 3.8rem;
+  color: #222;
+}
+/* 공지사항, 현지 뉴스 */
+main.news {
+  border-bottom: none;
+}
+main.board > div.count-order {
+  height: 3.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 1rem;
+}
+main.board > div.count-order > .nice-select {
+  float: right;
+  height: 100%;
+  line-height: inherit;
+  padding-right: 0;
+  padding-left: 2rem;
+  border: none;
+}
+main.board > div.count-order > .nice-select::after {
+  display: none;
+}
+main.board > div.count-order > .nice-select::before {
+  content: '';
+  position: absolute;
+  top: 0.9rem;
+  left: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/icon_order_01.svg) no-repeat center;
+}
+main.board > div.count-order > .nice-select > .list {
+  border-radius: 0;
+}
+main.board > div.count-order > .nice-select > .list > .option {
+  height: 3.6rem;
+  line-height: 3.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* main class notice & gallery */
+main.notice > ul.list, 
+main.gallery > ul.list {
+  border-top: 1px solid #E1E1E1;
+}
+
+/* section content notice * gallery */
+main.notice section > ul.list , 
+main.gallery section > ul.list {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.notice section > ul.list > li, 
+main.gallery section > ul.list > li {
+  padding: 1.6rem 0 1.6rem 11rem;
+}
+main.notice section > ul.list > li ,
+main.gallery section > ul.list > li {
+  display: block;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+main.gallery section > ul.list > li {
+  padding: 1.6rem 0 1.6rem 11rem;
+}
+
+main.gallery section > ul.list > li:first-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+section > ul.items > li > img,
+main.gallery section > ul.list > li > img {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 1;
+}
+section.contents > ul.items > li > a.thumb > img {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 1;
+}
+
+section.contents > ul.items > li > a.thumb > img {
+  border-radius: 0.4rem;
+}
+
+main.notice section > ul.list > li > h3.subject,
+main.gallery section > ul.list > li > h3.subject {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main.notice section > ul.list > li > h3.subject,
+main.gallery section > ul.list > li > h3.subject {
+  padding: 0.2rem 0 0.8rem;
+  margin-bottom: 0;
+}
+
+main.notice section > ul.list > li > p.content,
+main.gallery section > ul.list > li > p.content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #626262;
+  line-height: 2rem;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+
+main.gallery section > ul.list > li > div.info > span.comment > img {
+  width: 1.4rem;
+  margin-top: -0.2rem;
+  margin-right: 0.2rem;
+}
+
+main.notice section > ul.list > li > div.info,
+main.gallery section > ul.list > li > div.info {
+  padding-top: 0.7rem;
+}
+
+main.gallery section > ul.list > li > div.extra-info {
+  margin-left: -11rem;
+  padding-top: 1.5rem;
+}
+
+.uc-left { float: left; }
+.uc-right { float: right; text-align: right; }
+.uc-w30 { width: 30%;}
+.uc-w40 { width: 40%;}
+.uc-w50 { width: 50%;}
+.uc-w60 { width: 60%;}
+.uc-w70 { width: 70%;}
+
+
+.items .status { font-size: 1.3rem; }
+.items .on-sales .status { color: #0D4D97; }
+
+.items .on-completed { background-color: #eee;}
+.items .on-completed .status { color: #ccc; }
+.items .on-completed .subject { color: #ccc; }
+
+
+section.contents > ul.list > li > div > a.subject {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+}
+section.contents > ul.list > li.finish > div > a.subject,
+section.contents > ul.list > li.finish > div > p.address,
+section.contents > ul.list > li.finish > div > p.exchange,
+section.contents > ul.list > li.finish > div > p.exchange::before {
+  color: #9F9F9F;
+}
+section.contents > ul.list > li > div > p.address {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+section.contents > ul.list > li > div > p.exchange {
+  padding-left: 2.3rem;
+  font-weight: 700;
+}
+
+.exchange {
+  padding-left: 1rem;
+}
+
+.exchange > div {
+  font-size: 1.3rem;
+}
+.exchange .ex-kr::before {
+  font-size: 0.9rem;
+  content: ' ￦';
+}
+.exchange .ex-us::before {
+  font-size: 0.9rem;
+  content: ' $';
+}
+.exchange span.ex-sub {
+  font-size: 1.2rem;
+  color: #9D9D9D;
+}
+.items div.datetime {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  text-align: right;
+}
+
+.items div.address {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  text-align: right;
+}
+.items div.devide-e {
+  margin: 0.6rem;
+  border-bottom: 1px dashed #eee;
+}
+
+div.status {
+  font-size: 1.3rem;
+}
+div.status.on-sale {
+  color: #0D4D97;
+}
+
+section.contents > ul.list > ul > li > span.datetime {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.6rem;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+}
+
+main.notice section > ul.list > li > div.info > span,
+main.notice section > ul.list > li > div.extra-info > span,
+main.notice section > ul.list > li > div.info > p.loc,
+main.gallery section > ul.list > li > div.info > span,
+main.gallery section > ul.list > li > div.extra-info > span,
+main.gallery section > ul.list > li > div.info > p.loc{
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+
+section.contents > ul.list > li > div.info > p.loc {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 2rem;
+}
+section.contents > ul.list > li > div.info > p.loc::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/icon_loc_03.svg) no-repeat center;
+}
+
+
+main.gallery.job._hunt > section.slide-nav > ul {
+  padding-bottom: 0;
+}
+main.gallery.job._hunt > ul.list {
+  border-top: none;
+}
+main.notice > ul.list > li, main.gallery > ul.list > li {
+  display: block;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.notice > ul.list > li:first-child, main.gallery > ul.list > li:first-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+main.notice > ul.list > li > h3.subject,
+main.gallery > ul.list > li > h3.subject {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main.notice > ul.list > li > h3.subject > span.category {
+  font-size: inherit;
+  font-weight: inherit;
+}
+main.notice > ul.list > li > p.content,
+main.gallery > ul.list > li > p.content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #626262;
+  line-height: 2rem;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.notice > ul.list > li > div.info,
+main.gallery > ul.list > li > div.info {
+  padding-top: 0.7rem;
+}
+main.notice > ul.list > li > div.info > span,
+main.gallery > ul.list > li > div.info > span,
+main.report-missing > ul.list > li > div.info > p.loc,
+main.gallery > ul.list > li > div.extra-info > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+main.notice > ul.list > li > div.info > span.view,
+main.news > ul.list > li > div.info > span.comment,
+main.gallery > ul.list > li > div.info > span.datetime {
+  float: right;
+}
+main.board.notice > div.content > div.wr-info > span.wr-datetime {
+  padding-left: 0;
+}
+main.board.notice > div.content > div.wr-info > span.wr-datetime::before {
+  display: none;
+}
+main.board > div.content > div.file-link {
+  padding: 1.6rem 2.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+main.board > div.content > div.file-link::before {
+  content: '';
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/icon_download_01.svg) no-repeat center;
+}
+main.board.notice > div.content > div.wr-content {
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  border-bottom: none;
+  transform: skew(-0.001deg);
+}
+/* 현지 뉴스 */
+main.gallery > ul.list > li {
+  padding: 1.6rem 0 1.6rem 11rem;
+}
+main.gallery > ul.list > li > img {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 1;
+}
+main.gallery > ul.list > li > h3.subject {
+  padding: 0.2rem 0 0.8rem;
+  margin-bottom: 0;
+}
+main.gallery > ul.list > li > div.info > span.comment > img {
+  width: 1.4rem;
+  margin-top: -0.2rem;
+  margin-right: 0.2rem;
+}
+main.news > div.content > div.wr-content {
+  padding-bottom: 3.5rem;
+}
+div.container-comment.has-count {
+  padding-bottom: 5.3rem;;
+}
+div.container-comment.has-count.has-top-button {
+  padding-bottom: 11rem;;
+}
+div.container-comment.has-count > p.comment-count {
+  padding: 1.6rem;
+  font-family: 'Noto Sans KR';
+  color: #626262;
+  border-bottom: 1px solid #E1E1E1;
+  transform: skew(-0.001deg);
+}
+
+/* FAQ SUGGEST REPORT JOB */
+main.faq, main.suggestion, main.report-missing, main.job {
+  border-bottom: none;
+  padding-top: 0;
+}
+
+/* REPORT */
+main.report-missing.list {
+  padding-bottom: 5.3rem;
+}
+main.report-missing.list.missing {
+  padding-bottom: 13rem;
+}
+
+/* FAQ */
+main .faq > ul {
+  border-top: 1px solid #E1E1E1;
+}
+main .faq > ul.list > li {
+  display: block;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+main .faq > ul.list > li > a {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+main .faq > div.content > div.wr-content {
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  border-bottom: none;
+  transform: skew(-0.001deg);
+}
+
+/* 업체 추천, 신고/실종 */
+main.suggestion > div.content > div.wr-content {
+  padding-bottom: 3rem;
+  border-bottom: none;
+}
+main.suggestion > div.content > div.wr-content > figure,
+main.report-missing > div.content > div.wr-content > figure,
+main.job > div.content > div.wr-content > figure 
+{
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: 0;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+main.suggestion > div.content > div.wr-content > figure > img,
+main.report-missing > div.content > div.wr-content > figure > img,
+main.job > div.content > div.wr-content > figure > img 
+{
+  width: 13.5rem;
+  margin-right: 1rem;
+}
+main.report-missing .common-tab {
+  margin-bottom: 1rem;
+}
+main.report-missing .common-tab,
+main.job .common-tab {
+  padding: 0;
+}
+main.report-missing .common-tab > li,
+main.job .common-tab > li {
+  width: 50%;
+}
+main.report-missing > div.search-area {
+  padding: 0.8rem 0;
+}
+main.job > div.search-area {
+  padding: 0 0 1rem;
+}
+main.report-missing > div.search-area > button {
+  top: 0.8rem;
+}
+main.report-missing > ul.list > li > div.info > p.loc {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 2rem;
+}
+main.report-missing > ul.list > li > div.info > p.loc::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/icon_loc_03.svg) no-repeat center;
+}
+main.report-missing > ul.list > li > div.extra-info {
+  margin-left: -11rem;
+  padding-top: 1.5rem;
+}
+main.report-missing > ul.list > li > div.extra-info > span.name {
+  float: right;
+}
+main.report-missing > ul.list > li {
+  transition: all 0.15s;
+}
+main.report-missing > ul.list > li.swiped {
+  padding-left: 5rem;
+  padding-right: 6rem;
+  transition: all 0.15s;
+}
+main.report-missing > ul.list > li > img {
+  transition: all 0.15s;
+}
+main.report-missing > ul.list > li.swiped > img {
+  left: -6rem;
+  transition: all 0.15s;
+}
+main.report-missing > ul.list > li > button.btn-delete {
+  position: absolute;
+  top: 0;
+  right: -1.6rem;
+  width: 0;
+  height: 100%;
+  font-family: 'Noto Sans KR';
+  font-size: 0;
+  transform: skew(-0.001deg);
+  transition: all 0.15s, font-size 0s;
+}
+main.report-missing > ul.list > li.swiped > button.btn-delete {
+  width: 6rem;
+  line-height: 100%;
+  background: #0D4D97;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.15s, font-size 0s;
+}
+main.report-missing > div.content > p.category {
+  padding-top: 0.8rem;
+}
+main.report-missing > div.content > div.wr-content {
+  padding-bottom: 2.2rem;
+}
+main.board > div.content > div.loc-info {
+  padding: 2.2rem 0 2rem 3.6rem;
+}
+main.board > div.content > div.loc-info::before {
+  content: '위치';
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+main.board > div.content > div.loc-info > p {
+  font-family: 'Noto Sans KR';
+  line-height: 2rem;
+  transform: skew(-0.001deg);
+  padding-bottom: 1rem;
+}
+main.report-missing > div.container > div.category {
+  padding-top: 0.8rem;
+}
+main.report-missing > div.container > div.category > input[disabled],
+main.job.write > div.container > div > input[disabled] {
+  background: #F5F5F5;
+  color: #9F9F9F;
+}
+main.report-missing > div.container > div.description > input:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+main.report-missing > div.container > div.description > input:first-of-type,
+main.secondhand-market > div.container > div.location > input:first-of-type,
+main.job > div.container > div.description > input {
+  width: 30.3rem;
+}
+main.report-missing > div.container > div.description > input:first-of-type + img,
+main.secondhand-market > div.container > div.location > input:first-of-type + img,
+main.job > div.container > div.description > input + img {
+  float: right;
+  margin: 0.8rem 0.9rem 0 0;
+  width: 2.4rem;
+}
+main.report-missing > div.container > div.content > textarea,
+main.job > div.container > div.content > textarea {
+  padding: 1rem;
+}
+main.report-missing.write {
+  background: #FFF;
+}
+main.report-missing.write.set-loc {
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.report-missing.write > div.container > div.category {
+  padding-top: 0;
+}
+main.report-missing.write.set-loc input {
+  height: 4rem;
+}
+main.report-missing.write.set-loc > input, main.report-missing.write.set-loc > div {
+  margin-top: 0.7rem;
+  color: #9F9F9F;
+}
+main.report-missing.write.set-loc > input.lat-lng {
+  color: #222;
+}
+main.report-missing.write.set-loc > div > input {
+  width: 28.8rem;
+  color: #9F9F9F;
+}
+main.report-missing.write.set-loc > div > input + button {
+  float: right;
+  width: 4.8rem;
+  height: 4rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.4rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1rem;
+  padding-top: 2.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+main.report-missing.write.set-loc > div > input + button::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/icon_loc_05.svg) no-repeat center;
+}
+main.report-missing.write.set-loc + div.map-info {
+  padding: 1.9rem 1.6rem 12rem;
+  margin-top: 0.8rem;
+  background: #FFF;
+}
+main.report-missing.write.set-loc + div.map-info > figure {
+  width: 100%;
+}
+main.report-missing.write.set-loc + div.map-info > figure > img {
+  border-radius: 0.4rem;
+}
+main.report-missing.write.set-loc + div.map-info > figure > button {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.7rem 0;
+  border-radius: 1.5rem;
+  background: #FFF;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+main.report-missing.write.set-loc + div.map-info > figure > button > img {
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: top;
+}
+main.report-missing.write.set-loc + div.map-info > p {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.report-missing.write.set-loc + div.map-info > p.address-road {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 0 0.6rem;
+}
+main.report-missing.write.set-loc + div.map-info > p.address-jibun {
+  padding-left: 5rem;
+  color: #9F9F9F;
+}
+main.report-missing.write.set-loc + div.map-info > p.address-jibun::before {
+  content: '지번';
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
+  width: 4.2rem;
+  height: 1.7rem;
+  background: #F5F5F5;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  font-size: 1rem;
+  color: #9D9D9D;
+  transform: skew(-0.001deg);
+}
+main.gallery > ul.list > li > div.info > span.datetime {
+  float: none;
+}
+main.gallery > ul.list > li > div.info > span.name {
+  float: right;
+  margin-top: 1px;
+}
+/* 구인/구직 */
+main.job {
+  padding-bottom: 9rem;
+}
+main.job.view {
+  padding: 0.7rem 0 9rem;
+}
+main.job.view > div.content {
+  padding: 0 1.6rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.job > div.content > div.wr-content {
+  border-bottom: none;
+  padding-bottom: 2rem;
+}
+main.job.view > ul.chat-list > li {
+  display: block;
+  padding: 2.2rem 1.6rem;
+  border-bottom: 1px solid #E1E1E1;
+  font-size: 0;
+}
+main.job.view > ul.chat-list > li > figure {
+  display: inline-block;
+  width: 5rem;
+  height: 100%;
+  padding: 0.4rem 0;
+}
+main.job.view > ul.chat-list > li > figure > img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.6rem;
+}
+main.job.view > ul.chat-list > li > div.contents {
+  float: right;
+  width: calc(100% - 5rem);
+  padding-left: 1.3rem;
+}
+main.job.view > ul.chat-list > li > div.contents > p.name,
+main.job.view > ul.chat-list > li > div.contents > p.name > span.member-count {
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  transform: skew(-0.001deg);
+}
+main.job.view > ul.chat-list > li > div.contents > p.name > span.member-count {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.job.view > ul.chat-list > li > div.contents > p.name > span.datetime {
+  float: right;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #BEBEBE;
+}
+main.job.view > ul.chat-list > li > div.contents > div.latest {
+  width: 19rem;
+  line-height: 1.7rem;
+  padding: 0.3rem 0;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #626262;
+  transform: skew(-0.001deg);
+}
+main.job.view > ul.chat-list > li > div.contents > span.new-count {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.8rem;
+  background: #0D4D97;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+}
+main.job.write > div.container > div.category {
+  padding-top: 0.7rem;
+}
+main.job.write > div.container > div.range > div {
+  font-size: 0;
+}
+main.job.write > div.container > div.range > div > input {
+  width: 16.3rem;
+  background-image: url(../../img/icon_calendar_01.svg);
+  background-repeat: no-repeat;
+  background-position: top 1.2rem right 1.3rem;
+  background-size: 1.6rem 1.6rem;
+  color: #BEBEBE;
+}
+main.job.write > div.container > div.range > div > span {
+  display: inline-block;
+  width: 1.6rem;
+}
+main.job.write > div.container > div.area {
+  display: flex;
+  justify-content: space-between;
+}
+main.job.write > div.container > div.area > div {
+  width: 16.8rem;
+}
+main.job.write > div.container > div.area > div > div.nice-select {
+  width: 100%;
+}
+main.job.write > div.container > div.content > textarea {
+  height: 20rem;
+}
+main.job.write .nice-select {
+  padding-left: 1rem;
+}
+
+/* 중고마켓, 상점형 */
+main.secondhand-market {
+  padding: 0.8rem 1.6rem 5.3rem;
+}
+/* main.secondhand-market.list, */
+main.shop.list {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 4.6rem;
+}
+main.secondhand-market.list._2 {
+  padding-top: 0;
+}
+main.secondhand-market.view {
+  background: #FFF;
+  padding-bottom: 1.8rem;
+}
+main.secondhand-market > section.search-area {
+  padding: 0.8rem 1.6rem 0;
+}
+main.secondhand-market > section.search-area > .nice-select {
+  display: inline-block;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  border-radius: 0;
+}
+main.secondhand-market > section.search-area > .nice-select.sel-category {
+  float: none;
+  width: 9.6rem;
+}
+main.secondhand-market > section.search-area > .nice-select.sel-type {
+  float: right;
+  width: 24.3rem;
+}
+main.secondhand-market > section.tab-menu-n-search,
+main.shop > section.tab-menu-n-search {
+  padding: 0.8rem 1.6rem 1.2rem;
+}
+main.secondhand-market > section.slide-banner .swiper-slide > img,
+main.shop > section.slide-banner .swiper-slide > img {
+  width: 100%;
+}
+main.secondhand-market > section.slide-banner .pagination-num,
+main.shop > section.slide-banner .pagination-num {
+  position: absolute;
+  width: auto;
+  bottom: 1.8rem;
+  left: auto;
+  right: 1.6rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2.8rem;
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 9;
+}
+main.secondhand-market > section.slide-banner,
+main.shop > section.slide-banner {
+  overflow: hidden;
+}
+main.secondhand-market > section.slide-banner .pagination-num > span,
+main.shop > section.slide-banner .pagination-num > span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+/* main.secondhand-market > section.list, */
+main.shop > section.list {
+  padding: 1.5rem 0;
+}
+main.secondhand-market.list._2 > section.list {
+  padding-top: 0;
+}
+main.secondhand-market > section.list > ul > li,
+main.shop > section.list > ul > li {
+  display: block;
+  padding: 1.8rem 1.6rem 1.8rem 12.4rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.secondhand-market > section.list > ul > li.active {
+  background: rgba(33, 119, 228, 0.05);
+}
+main.secondhand-market > section.list > ul > li.finish {
+  background: #F5F5F5;
+}
+main.secondhand-market > section.list > ul > li > a.thumb,
+main.shop > section.list > ul > li > a.thumb {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.6rem;
+  display: block;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+}
+main.secondhand-market > section.list > ul > li > a.thumb > img,
+main.shop > section.list > ul > li > a.thumb > img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+main.secondhand-market > section.list > ul > li > div > p,
+main.secondhand-market > section.list > ul > li > div > a.subject,
+main.secondhand-market > section.list > ul > li > span {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);  
+}
+
+main.secondhand-market > section.list > ul > li > div > a.subject {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+}
+main.secondhand-market > section.list > ul > li.finish > div > a.subject,
+main.secondhand-market > section.list > ul > li.finish > div > p.address,
+main.secondhand-market > section.list > ul > li.finish > div > p.exchange,
+main.secondhand-market > section.list > ul > li.finish > div > p.exchange::before {
+  color: #9F9F9F;
+}
+main.secondhand-market > section.list > ul > li > div > p.address {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.secondhand-market > section.list > ul > li > div > p.exchange {
+  padding-left: 2.3rem;
+  font-weight: 700;
+}
+main.secondhand-market._2 > section.list > ul > li > div > p.exchange {
+  padding-left: 2.8rem;
+}
+main.secondhand-market > section.list > ul > li > div > p.exchange::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.3rem;
+  text-align: center;
+}
+main.secondhand-market > section.list > ul > li > div > p.exchange.type-won::before {
+  content: '￦';
+}
+main.secondhand-market > section.list > ul > li > div > p.exchange.type-dollar::before {
+  content: '$';
+}
+main.secondhand-market > section.list > ul > li > span.datetime {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.6rem;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+}
+main.secondhand-market > div.content {
+  padding: 0.8rem 1.6rem 0;
+}
+main.secondhand-market.view > div.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+main.secondhand-market > div.content > figure.content-images {
+  width: 100%;
+  overflow: hidden;
+}
+main.secondhand-market > div.content .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem 0 1.6rem;
+}
+main.secondhand-market > div.content > figure.content-images img {
+  width: 100%;
+}
+main.secondhand-market > div.content > div.wr-info {
+  height: 7rem;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 1.2rem 0 1.2rem 5.4rem;
+}
+main.secondhand-market > div.content > div.wr-info > img.user-photo {
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 2.3rem;
+}
+main.secondhand-market > div.content > div p,
+main.secondhand-market > div.content > div span {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.secondhand-market > div.content > div.wr-info > p.user-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+}
+main.secondhand-market > div.content > div.wr-info > p.address {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.secondhand-market > div.content > div.wr-info > span.rank {
+  position: absolute;
+  top: 2.5rem;
+  right: 0.6rem;
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.secondhand-market > div.content > div.detail {
+  padding: 1rem 0 0;
+}
+main.secondhand-market > div.content > div.detail > p.subject {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+main.secondhand-market > div.content > div.detail > p.info > span {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+  margin-right: 1.4rem;
+}
+main.secondhand-market > div.content > div.detail > p.inner-content {
+  font-size: 1.3rem;
+  padding: 1.5rem 0 2rem;
+  line-height: 1.9rem;
+  color: #626262;
+  text-align: justify;
+}
+main.secondhand-market > div.content > div.detail > p.extra-info {
+  padding: 0.5rem 0 0;
+}
+main.secondhand-market > div.content > div.detail > p.extra-info > span {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+  margin-right: 1.4rem;
+}
+div.place-title {
+  padding: 0.9rem 1.6rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+div.place-info {
+  padding: 1.8rem 1.6rem 9rem;
+  background: #FFF;
+}
+div.place-info > figure, div.place-info > figure > img {
+  border-radius: 0.4rem;;
+}
+div.place-info > div.address {
+  padding: 1rem 0 3.2rem;
+}
+div.place-info > div.address > p {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+div.place-info > button.btn-report {
+  width: 100%;
+  height: 4.4rem;
+  line-height: 4.2rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #222;
+  border-radius: 0.4rem;
+}
+div.place-info > button.btn-report:ACTIVE {
+  background: #F9F9F9;
+}
+div.summary-n-chat {
+  position: fixed;
+  bottom: 8.9rem;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  background: #FFF;
+  padding: 1.2rem 0;
+  border-top: 1px solid #E1E1E1;
+}
+div.summary-n-chat > button.btn-toggle-like {
+  width: 5rem;
+  height: 4rem;
+  border-right: 1px solid #E1E1E1;
+  line-height: 4rem;
+  background: url(../../img/icon_like_02_off.svg) no-repeat center;
+  border-radius: 0;
+  vertical-align: top;
+  margin-top: 0.2rem;
+}
+div.summary-n-chat > button.btn-toggle-like.on {
+  background: url(../../img/icon_like_02_on.svg) no-repeat center;
+}
+div.summary-n-chat > div.price {
+  display: inline-block;
+  padding: 0 1.5rem;
+  line-height: normal;
+}
+div.summary-n-chat > div.price > p.main {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: normal;
+  transform: skew(-0.001deg);
+}
+div.summary-n-chat > div.price > span {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  margin-right: 1.2rem;
+  transform: skew(-0.001deg);
+}
+div.summary-n-chat > button.btn-try-chat {
+  position: absolute;
+  top: 1.2rem;
+  right: 0;
+  width: 16.8rem;
+  height: 4.6rem;
+  margin-right: 1.6rem;
+  border-radius: 0.4rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 400;
+  transform: skew(-0.001deg);
+}
+main.secondhand-market .nice-select::after {
+  margin-top: -0.3rem;
+}
+main.secondhand-market.list._2 .nice-select::after {
+  margin-top: -0.2rem;
+}
+main.secondhand-market > div.container > div.location > input:last-child {
+  margin-top: 0.8rem;
+}
+main.secondhand-market > div.container > div.price > input {
+  width: 25.7rem;
+}
+main.secondhand-market > div.container > div.price > div.nice-select {
+  float: right;
+  width: 7.8rem;
+}
+main.secondhand-market > div.container > div.price > div.nice-select > ul.list > li {
+  width: 7.6rem;
+}
+main.secondhand-market > div.container > div.exchange-type > div {
+  display: flex;
+  justify-content: space-between;
+}
+main.secondhand-market > div.container > div.exchange-type > div > input {
+  display: none;
+}
+main.secondhand-market > div.container > div.exchange-type > div > input + label {
+  display: inline-block;
+  flex: 1;
+  height: 3.2rem;
+  line-height: 3rem;
+  background: #FFF;
+  text-align: center;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+}
+main.secondhand-market > div.container > div.exchange-type > div > label:first-of-type {
+  border-left: 1px solid #222;
+}
+main.secondhand-market > div.container > div.exchange-type > div > input:checked + label {
+  background: #222;
+  color: #FFF;
+  border-right-color: #FFF;
+}
+main.shop.list > section.list > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+}
+main.shop.list > section.list > div > .nice-select {
+  width: calc(50% - 0.3rem);
+  height: 4.4rem;
+  line-height: 4.2rem;
+}
+main.shop.list > section.list > div > .nice-select.open .list {
+  width: 16.8rem;
+}
+main.shop.list > section.list > ul > li > div > p,
+main.shop.list > section.list > ul > li > div > p > span,
+main.shop.list > section.list > ul > li > div > p > button {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.shop.list > section.list > ul > li > div > p.name {
+  padding: 0.3rem 0 0;
+  font-weight: 700;
+}
+main.shop.list > section.list > ul > li > div > p.name > img {
+  width: 5.6rem;
+  margin-left: 0.5rem;
+  margin-top: -0.2rem;
+}
+main.shop.list > section.list > ul > li > div > p.ratio > span {
+  font-size: 1.1rem;
+  vertical-align: top;
+}
+main.shop.list > section.list > ul > li > div > p.ratio > span.star {
+  display: inline-block;
+  font-weight: 700;
+  padding-right: 1.6rem;
+}
+main.shop.list > section.list > ul > li > div > p.ratio > span.star::after {
+  content: '';
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  width: 1px;
+  height: 1rem;
+  background: #BEBEBE;
+}
+main.shop.list > section.list > ul > li > div > p.ratio > span.star > img {
+  vertical-align: top;
+  margin-top: 0.1rem;
+}
+main.shop.list > section.list > ul > li > div > p.business-hours > span {
+  font-size: 1.2rem;
+}
+main.shop.list > section.list > ul > li > div > p.business-hours > span:first-child {
+  color: #9F9F9F;
+}
+main.shop.list > section.list > ul > li > div > p.tags {
+  padding-top: 0.8rem;
+}
+main.shop.list > section.list > ul > li > div > p.tags > span {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background: #F5F5F5;
+  border-radius: 1rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #616161;
+  margin-right: 0.2rem;
+  transform: skew(-0.001deg);
+}
+main.shop.list > section.list > ul > li > div > p.actions {
+  font-size: 0;
+  padding-top: 1rem;
+}
+main.shop.list > section.list > ul > li > div > p > button {
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  padding: 0;
+  margin-right: 1.2rem;
+}
+main.shop.list > section.list > ul > li > div > p > button > img {
+  vertical-align: top;
+  margin-top: 0.1rem;
+  margin-right: 0.1rem;
+}
+.best-shop-badge {
+  position: absolute;
+  width: 28px;
+  height: 36px;
+  z-index: 9;
+}
+main.shop.view, main.shop.reservation {
+  padding: 0;
+}
+main.shop.reservation {
+  padding-bottom: 5.2rem;
+  border-bottom: none;
+}
+main.shop.view > section {
+  background: #FFF;
+}
+main.shop > section.shop-list {
+  background: #FFF;
+  padding: 0.8rem 0 1.5rem; 
+}
+main.shop > section.shop-list > div.swiper {
+  overflow: hidden;
+  padding-left: 1rem;
+}
+main.shop > section.shop-list > div.swiper img {
+  width: 13.5rem;
+}
+main.shop > section.shop-list > div.pagination-dot {
+  padding: 0 1.6rem;
+  text-align: center;
+  bottom: -0.7rem;
+}
+main.shop > section.shop-name {
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.shop-name > p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 0 2.7rem;
+}
+main.shop > section.shop-name > p > img {
+  height: 3.6rem;
+  margin-right: 0.3rem;
+}
+main.shop > section.shop-name > div.info-1 {
+  padding: 1rem 1.6rem 2rem;
+}
+main.shop > section.shop-name > div.info-1 > span {
+  display: inline-block;
+  height: 2.4rem;
+  line-height: 2.2rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 1.2rem;
+  padding: 0 0.7rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+  margin-right: 0.7rem;
+}
+main.shop > section.shop-name > div.info-1 > span:last-child {
+  margin-right: 0;
+}
+main.shop > section.shop-name > div.info-1 > span.regular {
+  padding-left: 2.2rem;
+}
+main.shop > section.shop-name > div.info-1 > span.regular::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../../img/icon_like_02_on.svg) no-repeat center;
+  background-size: 1.4rem 1.4rem;
+}
+main.shop > section.shop-info-2 {
+  margin-top: 0.8rem;
+  padding: 1.6rem 2.6rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.shop-info-2 > ul > li {
+  display: block;
+  padding: 0.4rem 0;
+}
+main.shop > section.shop-info-2 > ul > li > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+main.shop > section.shop-info-2 > ul > li > span:first-child {
+  font-weight: 500;
+}
+main.shop > section.shop-info-2 > ul > li > span:last-child {
+  float: right;
+  color: #626262;
+}
+main.shop > section.shop-location {
+  margin-top: 0.8rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.shop-location > p.address {
+  padding: 2rem 1.6rem 1.6rem;
+  font-weight: 700;
+  color: #626262;
+}
+main.shop > section.shop-location > div.navigation {
+  border-top: 2px solid #F5F5F5;
+  padding: 1.8rem 5.8rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+main.shop > section.shop-location > div.navigation > button {
+  position: relative;
+  height: 4rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+main.shop > section.shop-location > div.navigation > button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 4rem;
+  background: #F5F5F5;
+}
+main.shop > section.shop-location > div.navigation > button:last-child::after {
+  display: none;
+}
+main.shop > section.shop-location > div.navigation > button > img {
+  width: 2rem;
+  vertical-align: top;
+}
+main.shop > section.shop-location > div.navigation > button > span {
+  display: block;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #0D4D97;
+  padding-top: 0.6rem;
+  transform: skew(-0.001deg);
+}
+main.shop > section.menu-n-review {
+  margin-top: 0.8rem;
+  padding: 2.3rem 1.6rem 1rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.menu-n-review > ul.common-tab {
+  padding: 0;
+}
+main.shop > section.menu-n-review > p.title {
+  padding: 1.8rem 0 1rem;
+}
+main.shop > section.menu-n-review > p.title > span {
+  display: none;
+  font-weight: 500;
+}
+main.shop > section.menu-n-review > p.title > span.show {
+  display: inline;
+}
+main.shop > section.menu-n-review > ul.menu-list {
+  display: none;
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  font-size: 0;
+  padding-bottom: 1rem;
+}
+main.shop > section.menu-n-review > ul.menu-list.show {
+  display: block;
+}
+main.shop > section.menu-n-review > ul.menu-list > li {
+  width: 9.6rem;
+  margin-right: 1rem;
+  border-radius: 0.4rem;
+}
+main.shop > section.menu-n-review > ul.menu-list > li:last-child {
+  margin-right: 0;
+}
+main.shop > section.menu-n-review > ul.menu-list > li > figure > img {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+main.shop > section.menu-n-review > ul.menu-list > li > div {
+  padding: 0.6rem 0.9rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  border: 1px solid #E1E1E1;
+}
+main.shop > section.menu-n-review > ul.menu-list > li > div > p {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  font-weight: 500;
+  transform: skew(-0.001deg);
+}
+main.shop > section.menu-n-review > ul.menu-list > li > div > p.name {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+main.shop > section.menu-n-review > ul.review-list {
+  display: none;
+  padding-bottom: 5.3rem;
+}
+main.shop > section.menu-n-review > ul.review-list.show {
+  display: block;
+}
+main.shop > section.menu-n-review > ul.review-list > li {
+  display: block;
+  padding: 1.6rem 0 1.8rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.menu-n-review > ul.review-list > li:last-child {
+  border-bottom: none;
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > figure {
+  width: 4.5rem;
+  float: left;
+  margin-right: 0.7rem;
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > div.info {
+  float: left;
+  width: calc(100% - 5.5rem);
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > div.info > p > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > div.info > p > span.name {
+  font-weight: 700;
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > div.info > p > span.datetime {
+  float: right;
+  color: #BEBEBE;
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > div.info > p.score {
+  font-size: 0;
+}
+main.shop > section.menu-n-review > ul.review-list > li > div.user > div.info > p.score > img {
+  width: 1.4rem;
+  padding: 0.5rem 0;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.content {
+  text-align: justify;
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  color: #626262;
+  line-height: 1.9rem;
+  padding: 1.5rem 0;
+  transform: skew(-0.001deg);
+}
+main.shop > section.menu-n-review > ul.review-list > li > ul.photo-list {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  font-size: 0;
+  padding-bottom: 1rem;
+}
+main.shop > section.menu-n-review > ul.review-list > li > ul.photo-list > li {
+  width: 7rem;
+  margin-right: 0.8rem;
+}
+main.shop > section.menu-n-review > ul.review-list > li > ul.photo-list > li > img {
+  width: 100%;
+}
+main.shop > section.menu-n-review > ul.review-list > li > ul.photo-list > li:last-child {
+  margin-right: 0;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra {
+  padding: 0.7rem 0 0;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > a {
+  display: inline-block;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #BEBEBE;
+  padding-left: 2rem;
+  transform: skew(-0.001deg);
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > a.report {
+  float: right;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > a::before {
+  content: '';
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-repeat: no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: center;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > a.recommend::before {
+  background-image: url(../../img/icon_recommend_01.svg);
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > a.report::before {
+  background-image: url(../../img/icon_report_02.svg);
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > button {
+  width: 7.5rem;
+  height: 4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  border-radius: 0.4rem;
+  transform: skew(-0.001deg);
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > button.btn-edit {
+  border: 1px solid #222;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > button.btn-edit:ACTIVE {
+  background: #F7F7F7;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > button.btn-delete {
+  float: right;
+  background: #0D4D97;
+  color: #FFF;
+}
+main.shop > section.menu-n-review > ul.review-list > li > p.extra > button.btn-delete:ACTIVE {
+  background: #0B468A;
+}
+main.shop > section.detail-list {
+  display: none;
+  margin-top: 0.8rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.detail-list.show {
+  display: block;
+}
+main.shop > section.detail-list > ul {
+  padding: 0 1.6rem;
+}
+main.shop > section.detail-list > ul > li {
+  display: block;
+  padding: 1.6rem 0 2.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+main.shop > section.detail-list > ul > li:last-child {
+  border-bottom: none;
+}
+main.shop > section.detail-list > ul > li > figure {
+  float: left;
+  width: 9.6rem;
+  margin-right: 1rem;
+}
+main.shop > section.detail-list > ul > li > div.info {
+  float: left;
+  width: calc(100% - 10.8rem);
+}
+main.shop > section.detail-list > ul > li.no-thumb > div.info {
+  width: 100%;
+}
+main.shop > section.detail-list > ul > li > div.info h3,
+main.shop > section.detail-list > ul > li > div.inff p {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.shop > section.detail-list > ul > li > div.info > h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+main.shop > section.detail-list > ul > li > div.info > p.price {
+  padding: 1.2rem 0 0.4rem;
+}
+main.shop > section.detail-list > ul > li > div.info > p.description {
+  color: #9F9F9F;
+}
+main.shop > section.detail-list > ul > li > p.exchange {
+  float: left;
+  line-height: normal;
+  padding: 0.8rem 0 0;
+}
+main.shop > section.detail-list > ul > li > p.exchange > span {
+  display: inline-block;
+  min-width: 7.4rem;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  padding: 0 1rem 0 2.5rem;
+  text-align: right;
+  background: #F5F5F5;
+  border-radius: 1.4rem;
+  margin-right: 0.7rem;
+}
+main.shop > section.detail-list > ul > li > p.exchange > span::before {
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+  font-weight: 700;
+}
+main.shop > section.detail-list > ul > li > p.exchange > span.dollar::before {
+  content: '$';
+}
+main.shop > section.detail-list > ul > li > p.exchange > span.won::before {
+  content: '￦';
+}
+main.shop > section.detail-list > ul > li > p.exchange > span.peso::before {
+  content: '₱';
+}
+main.shop > section.report {
+  display: none;
+  padding: 1.5rem 1.6rem;
+  background: transparent;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop > section.report.show {
+  display: block;
+}
+main.shop > section.report > span {
+  color: #626262;
+}
+main.shop > section.report > a {
+  float: right;
+}
+main.shop > section.report > a > img {
+  width: 2rem;
+}
+main.shop > section.extra {
+  display: none;
+  padding: 2rem 1.6rem 5.2rem;
+}
+main.shop > section.extra.show {
+  display: block;
+}
+.container-board-btns.menu, .container-board-btns.review {
+  display: none;
+}
+.container-board-btns.menu.show, .container-board-btns.review.show {
+  display: flex;
+}
+main.shop.reservation > section {
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop.reservation > section > h3 {
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 1.6rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 500;
+  transform: skew(-0.001deg);
+}
+main.shop.reservation > section.shop-info > div {
+  background: #FFF;
+  padding: 0.8rem 1.6rem 2.4rem;
+}
+main.shop.reservation > section.shop-info > div > img.thumb {
+  width: 4.5rem;
+  margin-right: 1rem;
+  border-radius: 0.4rem;
+}
+main.shop.reservation > section.shop-info > div > span {
+  font-weight: 700;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  margin-top: -0.4rem;
+}
+main.shop.reservation > section.shop-info > div > img.regular {
+  width: 5.6rem;
+}
+main.shop.reservation > section > div.item-container {
+  background: #FFF;
+  padding: 2.2rem 1.6rem 3rem;
+}
+main.shop.reservation > section div.item {
+  font-size: 0;
+  margin-top: 0.8rem;
+}
+main.shop.reservation > section div.item > label {
+  display: inline-block;
+  width: 5rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  transform: skew(-0.001deg);
+}
+main.shop.reservation > section div.item > input,
+main.shop.reservation > section div.item > textarea {
+  width: calc(100% - 5rem);
+}
+main.shop.reservation > section div.item .nice-select,
+main.shop.reservation > section div.item > input[disabled] {
+  width: 10rem;
+}
+main.shop.reservation > section div.item .nice-select {
+  display: inline-block;
+  float: none;
+}
+main.shop.reservation > section div.item .nice-select.open .list {
+  width: 9.8rem;
+}
+main.shop.reservation > section div.item > span {
+  margin: 0 0.2rem 0 2.2rem;
+}
+main.shop.reservation > section div.item > input[disabled] {
+  float: right;
+}
+main.shop.reservation > section.reservation-info {
+  border-bottom: none;
+}
+main.shop.reservation > section.reservation-info > div.item-container {
+  padding-top: 1rem;
+}
+main.shop.reservation > section.reservation-info div.item.memo > label {
+  vertical-align: top;
+  padding-top: 1.2rem;
+}
+main.shop.reservation > section.reservation-info div.item.memo > textarea {
+  height: 12.5rem;
+  resize: none;
+  padding: 1rem;
+}
+main.shop.reservation > section.reservation-info p.warning {
+  padding: 1.8rem 0;
+}
+main.shop.reservation > section.reservation-info p.warning > span {
+  font-size: 1.2rem;
+  color: #626262;
+}
+/* datepicker custom */
+#wrapper-datepicker {
+  position: fixed;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 13.5rem);
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 6.5rem 0 0;
+  transition: all 0.2s;
+  z-index: 10000;
+}
+#wrapper-datepicker.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s;
+}
+#wrapper-datepicker > div.container {
+  height: 100%;
+  padding: 2.3rem 1.6rem 2rem;
+  background: #FFF;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+#wrapper-datepicker > div.container > h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+#wrapper-datepicker > div.container > h1 > button.btn-close-datepicker {
+  float: right;
+}
+#wrapper-datepicker > div.container > div {
+  height: calc(100% - 4.5rem);
+  overflow: hidden auto;
+}
+#wrapper-datepicker .datepicker-inline {
+  width: 100%;
+  margin-top: -2.4rem;
+}
+#wrapper-datepicker .datepicker-panel > ul {
+  width: 100%;
+}
+#wrapper-datepicker .datepicker-panel > ul:first-child {
+  text-align: right;
+  padding-bottom: 1.5rem;
+}
+#wrapper-datepicker .datepicker-panel > ul:first-child > li {
+  float: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: transparent;
+}
+#wrapper-datepicker .datepicker-panel > ul:first-child > li:first-child,
+#wrapper-datepicker .datepicker-panel > ul:first-child > li:last-child {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#wrapper-datepicker .datepicker-panel > ul > li[data-view='month current'] {
+  width: 14.5rem;
+}
+#wrapper-datepicker .datepicker-panel > ul[data-view=week] {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+#wrapper-datepicker .datepicker-panel > ul[data-view=week] > li {
+  flex: 1;
+  width: auto;
+  height: auto;
+  font-weight: 500;
+}
+#wrapper-datepicker .datepicker-panel > ul[data-view=days] {
+  padding: 1rem 0;
+}
+#wrapper-datepicker .datepicker-panel > ul[data-view=days] > li {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin: 0.25rem 0.7rem;
+}
+#wrapper-datepicker .datepicker-panel > ul > li.muted {
+  color: #E5E5E5;
+}
+#wrapper-datepicker .datepicker-panel > ul > li.highlighted {
+  background: #0D4D97;
+  border-radius: 1.8rem;
+  color: #FFF;
+}
+#wrapper-datepicker .datepicker-panel > ul > li.picked {
+  color: #0D4D97;
+  font-weight: 700;
+}
+#wrapper-datepicker .datepicker-panel > ul > li.highlighted.picked {
+  color: #FFF;
+}
+#wrapper-datepicker ul.available-list {
+  width: calc(100% - 1px);
+}
+#wrapper-datepicker ul.available-list > li {
+  display: block;
+  height: 4rem;
+  padding: 0.8rem 1.5rem 0.8rem 1.8rem;
+  border: 1px solid #222;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+#wrapper-datepicker ul.available-list > li > span.quantity {
+  float: right;
+  margin-top: 0.2rem;
+}
+#wrapper-datepicker button.btn-register {
+  height: 4.4rem;
+  line-height: 4.4rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 7rem;
+}
+main.shop.review.write {
+  padding: 0 0 5.2rem;
+  border-bottom: none;
+}
+main.shop.review.write > div.container > div {
+  padding: 0 1.6rem;
+  background: #FFF;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.shop.review.write > div.container > div:last-child {
+  border-bottom: none;
+}
+main.shop.review.write > div.container > div.user-info {
+  padding: 0.5rem 1.6rem 2rem;
+}
+main.shop.review.write > div.container > div.user-info > img {
+  width: 4.5rem;
+}
+main.shop.review.write > div.container > div.user-info > span {
+  vertical-align: middle;
+  margin-left: 0.6rem;
+  font-weight: 700;
+}
+main.shop.review.write > div.container > div.content {
+  margin-top: 0.8rem;
+  padding: 2.2rem 1.6rem 1.8rem;
+  border-bottom: none;
+}
+main.shop.review.write > div.container > div.content > p {
+  margin: 0;
+  text-align: center;
+}
+main.shop.review.write > div.container > div.content > p.shop-name {
+  font-weight: 700;
+}
+main.shop.review.write > div.container > div.content > p.ratio {
+  padding: 0.8rem 0 1.8rem;
+  font-size: 0;
+}
+main.shop.review.write > div.container > div.content > p.ratio > button {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../../img/icon_star_04_off.svg) no-repeat center;
+  background-size: 2.4rem 2.4rem;
+  padding: 0;
+}
+main.shop.review.write > div.container > div.content > p.ratio > button.on {
+  background: url(../../img/icon_star_04_on.svg) no-repeat center;
+}
+main.shop.review.write > div.container > div.content > textarea {
+  height: 15.5rem;
+}
+main.shop.review.write > div.container > div.attach-image {
+  padding-bottom: 2rem;
+}
+main.shop.review.write > div.container > div.divider {
+  background: #F5F5F5;
+  border-bottom: none;
+}
+
+@keyframes skeleton-opacity {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+
+
+
+/* 유성철 게시판 관련 정리 */
+/* 
+  section 정리 > user-action
+*/
+section.user-action {
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.box-button-2 > button { width: 50%; }
+.box-button-3 > button { width: 33.33%; }
+.box-button-4 > button { width: 25%; }
+
+section.user-action > button {
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #BEBEBE;
+  transform: skew(-0.001deg);
+}
+section.user-action > button > img {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -0.3rem;
+  margin-right: 0.6rem;
+}
+
+
+

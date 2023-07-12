@@ -1,0 +1,32 @@
+.items-sort {
+  padding: 0 1.6rem 0.8rem;
+}
+
+.items-sort.clearfix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.items-sort.clearfix div.uc-left {
+  width: 50%;
+  margin-right: 0.6rem;
+  padding-right: 0;
+}
+
+.items-sort.clearfix div.uc-right {
+  width: 50%;
+  padding-left: 0;
+}
+
+main.sub.shop.list {
+  top: 0;
+}
+main.sub.shop.list .list ul li .name a {
+  line-height: 2rem;
+}
+main.sub.shop.list .list ul li .ratio .star ~ span {
+  margin-left: 0.5rem;
+}
+

@@ -1,0 +1,146 @@
+main.signin .flex-container {
+  display: flex;
+  flex-direction: column;
+
+}
+main.signin > h1 {
+  font-size: 2.4rem;
+  padding: 6.4rem 0 2.4rem;
+}
+main.signin > form > p.guide-warn {
+  display: none;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  padding: 0.4rem 0 1.6rem;
+  font-size: 1.2rem;
+  color: #ff1e54;
+}
+main.signin > form > p.guide-warn.show {
+  display: block;
+}
+main.signin > button.btn-signin {
+  margin: 3.2rem 0 2rem;
+  height: 4.8rem;
+  line-height: 4.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+main.signin > ul {
+  display: flex;
+  padding: 0 3rem;
+  justify-content: space-between;
+}
+main.signin > ul > li:nth-child(2)::before,
+main.signin > ul > li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  width: 1px;
+  height: 0.8rem;
+  background: #e1e1e1;
+}
+main.signin > ul > li:nth-child(2)::before {
+  left: -2rem;
+}
+main.signin > ul > li:nth-child(2)::after {
+  right: -2rem;
+}
+main.signin > ul > li > a {
+  font-size: 1.4rem;
+  color: #626262;
+}
+div.signin-sns {
+  position: relative;
+  margin-top: 6rem;
+  left: 0;
+  width: 100%;
+}
+div.signin-sns > h3 {
+  font-size: 1.4rem;
+  color: #222;
+}
+div.signin-sns > ul {
+  /* padding: 2rem 3.6rem 3.2rem;
+  display: flex;
+  justify-content: space-between; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 3.6rem 3.2rem;
+}
+div.signin-sns > ul > li > a:not(.uc-popup),
+div.signin-sns > ul > li > div:not(.uc-popup) {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4.8rem 4.8rem;
+}
+div.signin-sns > ul > li > div.link-kakao {
+  background-image: url(../img/sns_kakao_01.svg);
+  width: 4.8rem;
+  height: 4.8rem;
+}
+div.signin-sns > ul > li > div.link-naver {
+  background-image: url(../img/sns_naver_01.svg);
+  width: 4.8rem;
+  height: 4.8rem;
+}
+div.signin-sns > ul > li > div.link-google {
+  background-image: url(../img/sns_google_01.svg);
+}
+div.signin-sns > ul > li > div.link-apple {
+  background-image: url(../img/sns_apple_01.svg);
+}
+div.signin-sns > ul > li > div.link-facebook {
+  background-image: url(../img/sns_facebook_01.svg);
+}
+div.signin-sns > a {
+  text-decoration: underline;
+  color: #626262;
+}
+/* Jdy 추가 */
+main#ui-signin.signin {
+  top: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+.container main.signin {
+  flex: 0 0 auto;
+}
+.container .signin-sns {
+  flex: 0 0 auto;
+}
+main.signin > button.btn-signin {
+  margin: 1.2rem 0 2rem;
+}
+div.signin-sns {
+  position: static;
+}
+main.sub.signin form .item.user-id div.invalid-feedback,
+main.sub.signin form .item.user-pwd div.invalid-feedback {
+  position: absolute;
+  left: 0;
+}
+main.sub.signin form .item.user-id,
+main.sub.signin form .item.user-pwd {
+  margin-bottom: 1rem;
+}
+main.sub.signin form .item.user-pwd {
+  margin-bottom: 3.5rem;
+}
+
+@media only screen and (max-width: 280px) {
+  main.signin > ul {
+    padding: 0;
+  }
+  div.signin-sns > ul {
+    padding: 2rem 1.2rem 3.2rem;
+  }
+}

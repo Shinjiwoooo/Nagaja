@@ -1,0 +1,299 @@
+main.signup {
+  padding: 2rem 1.6rem 0;
+}
+main.signup > h1,
+main.signup-complete > h1 {
+  font-size: 2.4rem;
+}
+main[class*="signup"] > h1 + p,
+main[class*="find-"] > h1 + p,
+main.find-id.result > h1 + p + p,
+main[class*="signup"] .f-noto,
+main[class*="find-"] .f-noto {
+  padding: 0.6rem 0 1.2rem;
+  font-size: 1.6rem;
+  color: #9f9f9f;
+}
+main[class*="signup"] .f-noto.result,
+main[class*="find-"] .f-noto.result {
+  color: #222;
+  padding: 2rem 0 1.2rem;
+}
+main[class*="signup"] .f-noto.result .fw-b {
+  font-weight: bold !important;
+}
+main.signup > form {
+  padding-bottom: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 1.2rem; */
+}
+main.signup > form > div.item > button[type="primary"] {
+  height: 4.4rem;
+  line-height: 4.4rem;
+  background-color: #0d4d97;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Spoqa Han Sans Neo";
+  border-radius: 0.4rem;
+}
+main.signup > form > div.item > button.btn-cert-phone::after {
+  content: "하기";
+}
+main.signup > form > div.item > button.btn-cert-phone.certificated {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+main.signup > form > div.item > button.btn-cert-phone.certificated::after {
+  content: "완료";
+}
+main.signup > form > div.item > div.sel-country {
+  float: none;
+  width: 10rem;
+  height: 4.4rem;
+  line-height: 4.2rem;
+  padding-left: 0.8rem;
+  padding-right: 4rem;
+  margin-bottom: 7px;
+}
+main.signup > form > div.item.address input:disabled {
+  background: #fff;
+}
+main.signup > form > div.item > div.search-address,
+main.signup > form > div.item > div.search-address + input,
+main.signup > form > .item.address > input {
+  margin-bottom: 7px;
+}
+main.signup > form > div.item > div.search-address > input {
+  width: calc(100% - 7.9rem);
+}
+main.signup > form > div.item > div.search-address > input + button {
+  float: right;
+  width: 7.2rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  background-color: #f0f0f0;
+  color: #9d9d9d;
+  font-size: 1.4rem;
+}
+main.signup > form > div.item > div.search-address > a {
+  float: right;
+  width: 7.2rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  background-color: #f0f0f0;
+  color: #9d9d9d;
+  font-size: 1.4rem;
+  text-align: center;
+}
+main.signup > form > div.item > p.guide-warn,
+main.find-pwd.change > form > div.item > p.guide-warn {
+  display: none;
+  padding: 0.4rem 0 0;
+  font-size: 1.2rem;
+  color: #ff1e54;
+}
+main.signup > form > div.item > p.guide-warn.show,
+main.find-pwd.change > form > div.item > p.guide-warn.show {
+  display: block;
+}
+main.signup > form > div.item.aggreement {
+  padding: 4rem 0 5.2rem;
+}
+main.signup > form > div.item.aggreement > label {
+  font-family: "Noto Sans KR";
+  font-size: 1.6rem;
+  font-weight: 400;
+  transform: skew(-0.001deg);
+}
+main.signup > form > div.item.aggreement > ul > li {
+  display: block;
+  padding: 1rem 0 0;
+}
+main.signup > form > div.item.aggreement > ul > li:first-child {
+  padding: 1.3rem 0 1.2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+main.signup > form > div.item.aggreement > ul > li:nth-child(2) {
+  padding-top: 1.5rem;
+}
+main.signup > form > div.item.aggreement > ul > li > input {
+  vertical-align: middle;
+  margin-top: 0.2rem;
+  margin-right: 0.7rem;
+}
+main.signup > form > div.item.aggreement > ul > li > input + label {
+  color: #424242;
+}
+main.signup > form > div.item.aggreement > ul > li:first-child > input + label {
+  font-weight: 700;
+}
+main.signup > form > div.item.aggreement > ul > li > a {
+  float: right;
+  text-decoration: underline;
+  color: #9d9d9d;
+}
+main.signup > form > button.btn-submit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+}
+/* 회원가입 완료, 아이디 찾기 */
+main.signup-complete,
+main.find-id,
+main.find-pwd {
+  padding-top: 2rem;
+}
+main.signup-complete > h1,
+main.find-id > h1,
+main.find-pwd > h1 {
+  font-size: 2.4rem;
+}
+main.signup-complete > h1 + p,
+main.find-id > h1 + p,
+main.find-pwd > h1 + p {
+  line-height: 2.3rem;
+  padding-top: 2.9rem;
+  text-align: justify;
+}
+main.signup-complete > a[type="primary"] {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.2rem;
+  line-height: 5.2rem;
+  font-family: "Spoqa Han Sans Neo";
+  font-size: 1.8rem;
+  font-weight: 500;
+  z-index: 9;
+}
+main.find-id > a[type="primary"],
+main.find-pwd > a[type="primary"],
+main.find-pwd.change > button[type="submit"] {
+  height: 4.4rem;
+  line-height: 4.2rem;
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+main.find-id.result > h1 + p {
+  color: #222;
+}
+main.find-id.result > h1 + p > span {
+  font-size: inherit;
+  font-weight: 700;
+  color: inherit;
+}
+/* 비밀번호 찾기 */
+main.find-pwd > h1 + p {
+  padding-bottom: 4.4rem;
+}
+main.find-pwd > div > label {
+  display: block;
+  padding-bottom: 0.4rem;
+}
+main.find-pwd > a[type="primary"] {
+  margin-top: 0.8rem;
+}
+main.find-pwd > ul.guide {
+  padding: 2.8rem 0 0;
+}
+main.find-pwd > ul.guide > li {
+  display: block;
+  padding: 0 0 1rem 1.5rem;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #626262;
+  transform: skew(-0.001deg);
+}
+main.find-pwd > ul.guide > li::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 0.3rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #626262;
+  border-radius: 0.3rem;
+}
+main.find-pwd.change > form {
+  padding-top: 1rem;
+}
+
+main.sign-up .cert-phone div.item {
+  margin-top: 1rem;
+}
+
+main.signup-complete,
+main.find-id,
+main.sub.cert,
+main.find-pwd {
+  top: 4.4rem;
+}
+
+main.sub.signup div.item.user-id div.invalid-feedback,
+main.sub.signup div.item.user-pwd div.invalid-feedback,
+main.sub.signup div.item.user-pwd-check div.invalid-feedback,
+main.sub.signup div.item.user-nickname div.invalid-feedback {
+  position: absolute;
+  left: 0;
+}
+
+main.sub.signup div.item.user-name,
+main.sub.signup div.item.user-id,
+main.sub.signup div.item.user-pwd,
+main.sub.signup div.item.user-pwd-check,
+main.sub.signup div.item.user-nickname {
+  /* padding-bottom: 0.8rem; */
+  width: 100%;
+}
+
+main.sub.cert .area-form {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+main.sub.cert .area-form .react-select-container {
+  width: 30%;
+  margin-right: 0.5rem;
+}
+main.sub.cert .btn-common.send-cert-num {
+  margin-top: 1rem;
+}
+main.sub.cert .cert-number {
+  margin-top: 2rem;
+}
+main.sub.cert .cert-number .area-form .cert-left-time {
+  position: absolute;
+  right: 1rem;
+  color: #FF4755;
+  top: 1.2rem;
+}
+main.sub.cert .cert-number .check-cert-num {
+  margin-top: 1rem;
+}
+main.sub.cert .guide {
+  margin-top: 3rem;
+}
+main.sub.signup .description {
+  font-size: 1rem;
+}
+main.signup > form > div.item.aggreement{
+  padding: 3rem 0 4.2rem;
+}
+@media only screen and (max-width: 280px) {
+  main.sub.cert .area-form .react-select-container input {
+    width: fit-content;
+  }
+  main.signup > div.aggreement {
+    font-size: 1.3rem;
+  }
+}

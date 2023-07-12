@@ -1,0 +1,111 @@
+main.news {
+  border-bottom: none;
+}
+
+.news .content > div.wr-content {
+  padding-bottom: 3.5rem;
+}
+
+.news > ul.contents {
+  border-top: 1px solid #e1e1e1;
+}
+
+.news ul.contents > li {
+  padding: 1.6rem 0 1rem 11rem;
+}
+
+.news > ul.contents > li > h3.subject > span.category {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.news > ul.contents > li > h3.subject {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* margin-bottom: 1.8rem; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news > ul.list > li > div.info {
+  padding-top: 0.7rem;
+}
+
+.news > ul.list > li > div.info > span {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  transform: skew(-0.001deg);
+}
+
+.section ul.list > li > .info > span {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  transform: skew(-0.001deg);
+}
+
+main.sub.board.news ~ div.divider {
+  position: relative;
+  /* top: 9rem; */
+}
+main.sub.board.news {
+  /* top: 9rem; */
+  /* margin-bottom: 10rem; */
+}
+
+main.sub.board.news .count-order .react-select__dropdown-indicator {
+  display: none;
+}
+main.sub.board.news .count-order .react-select__control::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../img/icon_order_01.svg) no-repeat center;
+}
+main.sub.board.news .count-order .nice-select > .list {
+  border-radius: 0;
+}
+main.sub.board.news .count-order .nice-select > .list > .option {
+  height: 3.6rem;
+  line-height: 3.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+main.sub.board.gallery section.news ul li span.view.ud-left label,
+main.sub.board.gallery section.news ul li span.comment.uc-right label {
+  font-size: 1.2rem;
+  color: #9f9f9f;
+}
+main.sub.board.gallery section.news ul li span.comment.uc-right .img__comment {
+  height: auto;
+  top: 0.4rem;
+  left: -1.3rem;
+}
+main.sub.board.gallery.detail {
+  top: 9rem;
+}
+main.sub.board.gallery.detail ~ div.divider {
+  /* top: 47.8rem; */
+  position: relative;
+}
+main.sub.board.gallery.detail ~ .container {
+  margin-bottom: 0;
+}
+main.sub.board.gallery.detail ~ .container div.container-comment.has-count {
+  padding-bottom: 11.5rem;
+}
+main.sub.board.gallery.detail ~ .container {
+  padding-bottom: 0;
+}
+
+/* @media only screen and (max-width: 280px) {
+  main.sub.board.gallery.news {
+    margin-bottom: 10rem;
+  }
+} */

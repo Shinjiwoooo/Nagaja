@@ -1,0 +1,40 @@
+.react-select-sm > div { min-height: 3.2rem !important; }
+.react-select-sm div, 
+.react-select-sm input  { font-size: 1.2rem !important }
+/* .react-select-sm input  { height:3.0rem !important } */
+.react-select-sm > .react-select__control { line-height: 2.4rem !important; height: 2.4rem !important; }
+.react-select-sm > .react-select__control input { position: absolute; font-size: 1rem; }
+.react-select-sm .react-select__indicator { padding: 5px !important;}
+/* .react-select-sm .react-select__indicators span { margin-top: 1rem; margin-bottom: 1rem;} */
+
+.react-select-md div, 
+.react-select-md > div > div { }
+.react-select-md > .react-select__control input { height: 3rem; }
+.react-select-md .react-select__indicator { padding: 5px !important;}
+
+.react-select-sm > div { border-radius: 0; }
+.react-select-sm input{ height: inherit; }
+
+/* react-select-de*/
+.react-select-de p,
+.react-select-de div,
+.react-select-de span,
+.react-select-de input {
+  font-size: 1.2rem;
+  text-align: left;
+ 
+}
+.react-select-de input,
+.react-select-de button { height:2.6rem;}
+.react-select-de > div { min-height: 3.2rem !important; }
+
+/* react-select-lg*/
+.react-select-lg p,
+.react-select-lg div,
+.react-select-lg span,
+.react-select-lg input {
+  font-size: 1.4rem;
+}
+.react-select-lg input,
+.react-select-lg button { height:3.82rem}
+.react-select-lg > div { min-height: 4.32rem !important; }

@@ -1,0 +1,35 @@
+
+main.recommand section.contents-wrap {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.recommand ul.contents {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.recommand ul.contents > li .content {
+  min-height: 4.4rem;
+}
+
+main.recommand ul.contents .info > span {
+  float: none;
+  display: inline-block;
+  font-weight: 400;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+  margin-right: 0.8rem;
+}
+main.recommand ul.contents .info {
+  display: flex;
+  justify-content: space-between;
+}
+main.recommand.detail div.content div.wr-content figure {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: 0;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}

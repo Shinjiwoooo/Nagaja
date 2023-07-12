@@ -1,0 +1,41 @@
+/* 메인베너 공용 */
+
+.react-select-container {
+  
+}
+
+.react-select-container input {
+  height: 3rem !important;
+}
+
+div#location ~ main.sub.set-location .react-select-container > div {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.set-location > div.container-area > ul
+{
+  background-color: #efefef;
+}
+
+.set-location > div.container-area > ul > li
+{
+  display: block;
+  padding: 1.4rem 2rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+  border-bottom:1px solid #dfdfdf;
+}
+
+.set-location > div.container-area > ul > li.on {
+  color: #0D4D97;
+  background-color: #e3f0ff;
+}
+
+.set-location > div.area-detail > ul > li.on {
+  color: #0D4D97;
+  background-color: #e3f0ff;
+}

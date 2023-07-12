@@ -1,0 +1,88 @@
+main.shop.view .detail-list .mycompany-product-img {
+  float: left;
+  width: 9.6rem;
+  height: 9.6rem;
+  margin-right: 1rem;
+  border-radius: 0.4rem;
+}
+.mycompany-item-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: flex-start;
+}
+main.shop.view .detail-list div.info {
+  float: left;
+  width: calc(100% - 10.8rem);
+  border-radius: 0.4rem;
+}
+main.shop.view .detail-list div.info p.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+main.shop.view .detail-list div.info p.price {
+  padding: 1.2rem 0 0.4rem;
+}
+main.shop.view .detail-list div.info p.description {
+  color: #9f9f9f;
+  line-height: 2rem;
+}
+.review-list .user {
+  display: flex;
+}
+main.shop.view .detail-list div.info {
+  width: 100%;
+}
+.review-content-container {
+  padding: 1.8rem 0 0;
+}
+.section.user-action,
+section .user-action {
+  justify-content: space-between;
+  padding: 0;
+}
+.section.user-action button,
+section.user-action > button {
+  width: auto;
+}
+.uc-button.uc-button-comment:first-child {
+  text-align: left;
+}
+.uc-button.uc-button-comment:last-child {
+  text-align: right;
+}
+.review-content-container .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.review-content-container .button-container button {
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.review-content-container .button-container button:first-child {
+  border: 1px solid #222222;
+}
+.review-content-container .button-container button:last-child {
+  border: none;
+  background-color: #0D4D97;
+  color: #fff;
+}
+.uc-button.uc-button-comment {
+  width: auto;
+}
+.review-header {
+  display: flex;
+  justify-content: space-between;
+}
+.review-header .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-header .datetime {
+  min-width: fit-content;
+}
+p.ratio {
+  margin-top: 0.5rem;
+}

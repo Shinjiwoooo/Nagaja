@@ -1,0 +1,26 @@
+main.suggest {
+  margin-bottom: 4.8rem;
+}
+main.suggest section.contents-wrap {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.suggest ul.contents {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.suggest ul.contents > li .content {
+  min-height: 4.4rem;
+}
+
+main.suggest ul.contents .info > span {
+  float: none;
+  display: inline-block;
+  font-weight: 400;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+  margin-right: 0.8rem;
+}
+

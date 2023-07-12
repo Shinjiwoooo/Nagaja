@@ -1,0 +1,35 @@
+main.work {
+  margin-bottom: 4.8rem;
+}
+main.work section.contents-wrap {
+  border-top: 1px solid #E1E1E1;
+}
+
+main.work ul.contents > li {
+  padding: 1.6rem 0 1rem 11rem;
+}
+
+main.work ul.contents > li .content {
+  min-height: 4.4rem;
+}
+
+main.work ul.contents .info > span {
+  float: none;
+  display: inline-block;
+  font-weight: 400;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+  
+
+main.work.write input[disabled] {
+  background: #F5F5F5;
+  color: #9F9F9F;
+}
+
+.gallery ul.contents > li > div.info > span.compname {
+  float: right;
+  margin-top: 1px;
+}

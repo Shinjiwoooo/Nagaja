@@ -1,0 +1,308 @@
+main.market.write {
+  padding: 0.8rem 1.6rem 8.2rem;
+}
+main.market.view {
+  padding: 0.8rem 0 10rem;
+}
+main.biz.market > div.select-container {
+  padding: 1.6rem 1.6rem 0;
+}
+main.biz.market > div.select-container .nice-select {
+  float: none;
+  height: 3.6rem;
+  line-height: 3.4rem;
+  border-radius: 0;
+}
+main.biz.market > div.select-container > div:not(.nice-select) {
+  margin-top: 0.8rem;
+}
+main.biz.market > div.select-container > div > .nice-select {
+  display: inline-block;
+}
+main.biz.market > div.select-container > div > .nice-select.type {
+  width: 9.6rem;
+}
+main.biz.market > div.select-container > div > .nice-select.category {
+  float: right;
+  width: 24.3rem;
+}
+main.biz.market > div.list {
+  padding-bottom: 3rem;
+}
+main.biz.market > div.list > ul > li {
+  display: block;
+  padding: 1.8rem 1.6rem 1.8rem 12.4rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.biz.market > div.list > ul > li.closed {
+  background: #F5F5F5;
+}
+main.biz.market > div.list > ul > li > a.thumb {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.6rem;
+  display: block;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+}
+main.biz.market > div.list > ul > li > div > p,
+main.biz.market > div.list > ul > li > div > a {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.biz.market > div.list > ul > li > div > p.status {
+  font-size: 1.2rem;
+  color: #0D4D97;
+}
+main.biz.market > div.list > ul > li > div > a.subject {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+}
+main.biz.market > div.list > ul > li > div > p.address {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.biz.market > div.list > ul > li > div > p.exchange {
+  padding-left: 2.3rem;
+  font-weight: 700;
+}
+main.biz.market > div.list > ul > li > div > p.exchange::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.3rem;
+  text-align: center;
+}
+main.biz.market > div.list > ul > li > div > p.exchange.type-dollar::before {
+  content: '$';
+}
+main.biz.market > div.list > ul > li > div > p.exchange.type-won::before {
+  content: '￦';
+}
+main.biz.market > div.list > ul > li > span.datetime {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.6rem;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+}
+main.biz.market > div.list > ul > li.closed > div > a.subject,
+main.biz.market > div.list > ul > li.closed > div > p.exchange,
+main.biz.market > div.list > ul > li.closed > div > p.exchange::before {
+  color: #9F9F9F;
+}
+/* WRITE */
+main.market.write > div.common-container > div.exchange-type > div {
+  display: flex;
+  justify-content: space-between;
+}
+main.market.write > div.common-container > div.exchange-type > div > input {
+  display: none;
+}
+main.market.write > div.common-container > div.exchange-type > div > input + label {
+  display: inline-block;
+  flex: 1;
+  height: 3.2rem;
+  line-height: 3rem;
+  background: #FFF;
+  text-align: center;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+}
+main.market.write > div.common-container > div.exchange-type > div > input + label:first-of-type {
+  border-left: 1px solid #222;
+}
+main.market.write > div.common-container > div.exchange-type > div > input:checked + label {
+  background: #222;
+  color: #FFF;
+  border-right-color: #FFF;
+}
+main.market.write > div.common-container > div.exchange-type > div > input:last-of-type + label {
+  border-right-color: #222;
+}
+main.market.write > div.common-container > div.price > input {
+  width: 25.7rem;
+}
+main.market.write > div.common-container > div.price > div.nice-select {
+  float: right;
+  width: 7.8rem;
+}
+main.market.write > div.common-container > div.content > textarea {
+  height: 25rem;
+}
+/* VIEW */
+main.market.view > div.content {
+  padding: 0 1.6rem 1.8rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+main.market.view > div.content > figure.content-images {
+  width: 100%;
+  overflow: hidden;
+}
+main.market.view > div.content > figure.content-images img {
+  width: 100%;
+}
+main.market.view > div.content > div.wr-info {
+  height: 7rem;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 1.2rem 0 1.2rem 5.4rem;
+}
+main.market.view > div.content > div.wr-info > img.user-photo {
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 2.3rem;
+}
+main.market.view > div.content > div.wr-info > p.user-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+}
+main.market.view > div.content > div.wr-info > p.address {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.market.view > div.content > div.wr-info > span.rank {
+  position: absolute;
+  top: 2.5rem;
+  right: 0.6rem;
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+main.market.view > div.content > div.detail {
+  padding: 1rem 0 0;
+}
+main.market.view > div.content > div.detail > p.subject {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+main.market.view > div.content > div p, 
+main.market.view > div.content > div span {
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.market.view > div.content > div.detail > p.info > span {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+  margin-right: 1.4rem;
+}
+main.market.view > div.content > div.detail > p.inner-content {
+  font-size: 1.3rem;
+  padding: 1.5rem 0 2rem;
+  line-height: 1.9rem;
+  color: #626262;
+  text-align: justify;
+}
+main.market.view > div.content > div.detail > p.extra-info {
+  padding: 0.5rem 0 0;
+}
+main.market.view > div.content > div.detail > p.extra-info > span {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+  margin-right: 1.4rem;
+}
+main.market > div.place-title {
+  padding: 0.9rem 1.6rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  background: #F5F5F5;
+  transform: skew(-0.001deg);
+}
+main.market > div.place-info {
+  padding: 1.8rem 1.6rem 0;
+  background: #FFF;
+}
+main.market > div.place-info > figure {
+  border-radius: 0.4rem;
+}
+main.market > div.place-info > div.address {
+  padding: 1rem 0 3.2rem;
+}
+main.market > div.place-info > div.address > p {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  transform: skew(-0.001deg);
+}
+main.market > div.place-info > div.button-container > button {
+  width: calc(50% - 2px);
+}
+main.market > div.place-info > button.btn-report {
+  width: 100%;
+  height: 4.4rem;
+  line-height: 4.2rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #222;
+  border-radius: 0.4rem;
+}
+div.summary-n-chat {
+  position: fixed;
+  bottom: 7rem;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  background: #FFF;
+  padding: 1.2rem 0;
+  border-top: 1px solid #E1E1E1;
+}
+div.summary-n-chat > button.btn-toggle-like {
+  width: 5rem;
+  height: 4rem;
+  border-right: 1px solid #E1E1E1;
+  line-height: 4rem;
+  background: url(../img/icon_like_02_off.svg) no-repeat center;
+  border-radius: 0;
+  vertical-align: top;
+  margin-top: 0.2rem;
+}
+div.summary-n-chat > button.btn-toggle-like.on {
+  background: url(../img/icon_like_02_on.svg) no-repeat center;
+}
+div.summary-n-chat > div.price {
+  display: inline-block;
+  padding: 0 1.5rem;
+  line-height: normal;
+}
+div.summary-n-chat > div.price > p.main {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: normal;
+  transform: skew(-0.001deg);
+}
+div.summary-n-chat > div.price > span {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  margin-right: 1.2rem;
+  transform: skew(-0.001deg);
+}
+div.summary-n-chat > button.btn-hold {
+  position: absolute;
+  top: 1.2rem;
+  right: 0;
+  width: 16.8rem;
+  height: 4.6rem;
+  margin-right: 1.6rem;
+  border-radius: 0.4rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 400;
+  transform: skew(-0.001deg);
+}
+main.market.view > div.content .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem 0 1.6rem;
+}

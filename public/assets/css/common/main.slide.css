@@ -1,0 +1,28 @@
+/* 메인베너 공용 */
+main > section.slide-banner {
+  height: 18rem;
+  overflow: hidden;
+}
+main > section.slide-banner .swiper-slide > img {
+  width: 100%;
+}
+main > section.slide-banner .swiper-pagination {
+  position: absolute;
+  width: auto;
+  bottom: 1.8rem;
+  left: auto;
+  right: 1.6rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2.8rem;
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 9;
+}
+main > section.slide-banner .swiper-pagination > span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}

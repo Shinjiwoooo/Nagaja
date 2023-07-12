@@ -1,0 +1,25 @@
+.faq {
+  border-bottom: none;
+}
+
+.faq > ul {
+  border-top: 1px solid #E1E1E1;
+}
+
+.faq > ul.contents > li {
+  display: block;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+
+.faq ul.contents > li .context  {
+  font-size: 1.2rem;
+}
+main.sub.board.faq .faq {
+  margin-bottom: 5rem;
+}
+main.sub.faq section.faq ul.contents li a {
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,10 @@
+main.market.search {
+  padding-bottom: 13rem;
+}
+main.market.search > h3 {
+  height: 4.3rem;
+  line-height: 4.3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}

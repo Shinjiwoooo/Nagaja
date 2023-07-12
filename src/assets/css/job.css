@@ -1,0 +1,74 @@
+main.job.list {
+  padding: 0 1.6rem 13.2rem;
+}
+main.job.list > ul.common-tab {
+  padding: 0;
+}
+main.job.list > div.slide-nav {
+  padding-bottom: 0.8rem;
+}
+main.job.list > ul.list > li {
+  display: block;
+  padding: 1.6rem 0 1.6rem 11rem;
+  border-bottom: 1px solid #F8F8F8;
+}
+main.job.list > ul.list > li:first-child {
+  padding-top: 0;
+}
+main.job.list > ul.list > li > img {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 1;
+}
+main.job.list > ul.list > li:first-child > img {
+  top: 0;
+}
+main.job.list > ul.list > li > a.subject {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.2rem 0 0.8rem;
+  margin-bottom: 0;
+}
+main.job.list > ul.list > li > p.content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #626262;
+  line-height: 2rem;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+main.job.list > ul.list > li > div.info {
+  padding-top: 0.7rem;
+}
+main.job.list > ul.list > li > div.info > span {
+  font-family: 'Noto Sans KR';
+  font-size: 1.2rem;
+  color: #9F9F9F;
+  transform: skew(-0.001deg);
+}
+main.job.list > ul.list > li > div.info > span.datetime {
+  float: none;
+}
+main.job.list > ul.list > li > div.info > span.name {
+  float: right;
+  margin-top: 1px;
+}
+/* VIEW */
+main.job.view > div.content > button.btn-close-hire {
+  margin: 2rem 0 4rem;
+  height: 4.4rem;
+  line-height: 4.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 0.4rem;
+}

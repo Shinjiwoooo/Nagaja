@@ -1,0 +1,120 @@
+/*
+  common
+*/
+.uc-left {
+  float: left;
+}
+.uc-right {
+  float: right;
+}
+.uc-clearfix {
+  clear: both;
+}
+section .items > li {
+  border-bottom : 1px dashed #E1E1E1;
+  clear:both;
+}
+section .items .uc-devide {
+  border-bottom : 1px dashed #E1E1E1;
+  margin : 0.4rem 0 0.4rem 0;
+}
+.uc-status { color: #0D4D97; }
+.uc-exchange > div{
+  position: relative;
+}
+.uc-exchange .ex-base {
+  padding: 0.2rem 0.1rem;
+}
+.uc-exchange .ex-sub {
+  text-align: right;
+  font-size: 1.2rem;
+}
+.uc-exchange .ex-sub > span {
+  font-size: 1.1rem;
+  margin: 0.5rem 0.2rem 0.2rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #9F9F9F;
+  border-radius: 0.4rem;
+  background-color: #EFEFFF;
+}
+.uc-exchange span.ex-kr::before {
+  content: '￦';
+}
+.uc-exchange span.ex-us::before {
+  content: '$';
+}
+/* secondhand */
+/*
+  main  
+    - cago
+    - search
+    - devide tag
+    - banner
+    - section : secondhand & contents-wrap
+      - ul : contents-item
+        - li : item
+          - a : tag > image : tag
+          - div :  uc-state
+            - div : subject
+            - div : address
+            - div : devide line
+            - div : exchange
+
+*/
+
+section.secondhand {
+  padding-bottom: 10rem;
+}
+section.secondhand > ul {}
+section.secondhand > ul > li {
+  display: block;
+  padding: 1.8rem 1.6rem 1.8rem 12.4rem;
+  min-height: 16rem;
+}
+section.secondhand > ul > li::after {}
+section.secondhand > ul > li > a {}
+section.secondhand > ul > li > a.thumb {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.6rem;
+  display: block;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 0.4rem;
+}
+a.thumb > img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+section.secondhand > ul > li .uc-status {
+  font-size: 1.3rem;
+}
+section.secondhand > ul > li .uc-subject {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+}
+section.secondhand > ul > li .uc-address {
+  font-size: 1.2rem;
+  color: #BEBEBE;
+}
+section.secondhand > ul > li .uc-line { }
+section.secondhand > ul > li .uc-exchange {
+  font-weight: 700;
+}
+section.secondhand > ul > li span { }
+section.secondhand > ul > li .uc-datetime {
+  position: absolute;
+  bottom: 0rem;
+  right: 1.6rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #9F9F9F;
+}
+
+
+
+
