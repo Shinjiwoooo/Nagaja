@@ -1,0 +1,12 @@
+.wrapper{
+    width:200px;
+    height:200px;
+    background-color:rgb(230, 230, 255);
+}
+
+.manager_wrap{
+    background-color:yellow;
+    display:flex;
+
+    
+}
