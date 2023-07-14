@@ -12,7 +12,10 @@ import SetTime from './Pages/modal/SetTime';
 function App() {
 
   useLayoutEffect(() => {
-    document.body.classList = "";
+    
+
+
+    
     import("../src/assets/css/common.css");
     import("../src/assets/css/board.css");
     import("../src/assets/css/common_biz.css");
