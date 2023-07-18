@@ -21,6 +21,8 @@ function App() {
     import("../src/assets/css/common_biz.css");
   });
 
+
+  
   return (
     <BrowserRouter>
       <Routes>
