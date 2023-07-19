@@ -408,6 +408,8 @@ div.button-container {
   display: flex;
   justify-content: space-between;
 }
+
+
 #biz-popup > div > div.contents > div.checkbox-container > input {
   display: none;
 }
@@ -544,7 +546,9 @@ main.biz.info.sale .break-time-wrapper ~ .btn-edit {
 }
 
 
- /* 주석 */
+
+
+ /*sale-Info*/
  main.biz.sale > div.common-container > div.exchange-type > div > input + label:first-of-type {
   border-left: 1px solid #222;
 }
@@ -653,45 +657,144 @@ main.biz.sale > div.common-container > div.exchange-type > div > input:checked +
   color: #FFF;
   border-right-color: #FFF;
 }
-/* 
-main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
-  background: #222;
-  color: #FFF;
-  border-right-color: #FFF;
+
+/* set-breaktime */
+div.contents.break-time > div.configure {
+  display: flex;
+  justify-content: space-between;
 }
 
-main.biz.sale > div.common-container > div.exchange-type > div > input + label:first-of-type {
-  border-left: 1px solid #222;
-} */
-
-
-/* main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
-  background: #222;
-  color: #FFF;
-  border-right-color: #FFF;
+div.contents.break-time > div.configure > div {
+  width: 13rem;
 }
 
-main.biz.sale > div.common-container > div.additional > div > div.item:first-child > input + label {
-  border-left: 1px solid #222;
+div.contents.break-time > div.configure > div > p {
+  height: 2.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 0.6rem;
 }
 
-main.biz.sale > div.common-container > div.exchange-type > div > input + label {
-  display: inline-block;
-  flex: 1;
-  height: 3.2rem;
-  line-height: 3rem;
-  background: #FFF;
-  text-align: center;
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
-  border-right: 1px solid #222;
+select.has-value, select > option {
+  color: #222;
 }
 
-main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
-  background: #222;
-  color: #FFF;
-  border-right-color: #FFF;
-} */
+div.contents.break-time > div.configure > div > button.default {
+  width: 100%;
+  height: 4rem;
+  line-height: 3.8rem;
+  font-weight: 700;
+}
+
+ div.contents.break-time > ul.result {
+  margin: 2.5rem 0 3rem;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.4rem;
+}
+
+div.contents.break-time > ul.result > li {
+  display: block;
+  padding: 0.6rem 0;
+}
+
+div.contents.break-time > ul.result > li > button.btn-delete {
+  float: right;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: 0.2rem;
+  background: url(../img/icon_clear_01.svg) no-repeat center;
+}
+
+div.contents.break-time > div.configure > div:last-child {
+  width: 7.5rem;
+}
+
+div.contents.break-time > div.configure > div > .nice-select {
+  float: none;
+}
+
+select > option {
+  color: #222;
+}
+
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+}
+
+div.nice-select .list {
+  width: 100%;
+  z-index: 99;
+}
+
+.nice-select .list {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 1px #E1E1E1;
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  -ms-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+}
+
+.nice-select:after {
+  border-bottom: 2px solid #222;
+  border-right: 2px solid #222;
+  content: '';
+  display: block;
+  height: 0.5rem;
+  margin-top: -0.4rem;
+  pointer-events: none;
+  position: absolute;
+  right: 1.2rem;
+  top: calc(50% - 0.2rem);
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 0.5rem;
+}
 
 
-/* 주석 */
+/* set-time */
+button.btn-save {
+  margin-top: 1rem;
+}
+
+div.contents.biz-time > div {
+  margin-bottom: 0.8rem;
+  line-height: 4rem;
+}
+
+div.contents.biz-time > div > .nice-select {
+  float: right;
+  width: 16.8rem;
+}
+
+div.contents.biz-time > div > span, #biz-popup.sale div.contents.break-time > div.configure > div > p {
+  font-family: 'Noto Sans KR';
+  font-size: 1.6rem;
+  transform: skew(-0.001deg);
+}
