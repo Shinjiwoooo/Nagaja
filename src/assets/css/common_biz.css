@@ -353,6 +353,7 @@ div.button-container {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 0.8rem 1.6rem 2rem;
+  overflow: scroll;
 }
 #biz-popup > div > h3 {
   font-size: 1.6rem;
@@ -541,3 +542,156 @@ main.biz.info.sale .break-time-wrapper ~ .btn-edit {
     margin-top: 0.5rem;
   }
 }
+
+
+ /* 주석 */
+ main.biz.sale > div.common-container > div.exchange-type > div > input + label:first-of-type {
+  border-left: 1px solid #222;
+}
+
+ main.biz.sale > div.common-container > div.manager > div:not(:last-child), main.biz.sale > div.common-container > div.waiter > div {
+  margin-bottom: 0.8rem;
+}
+
+main.biz.sale > div.common-container > div.waiter > button.btn-edit {
+  width: 100%;
+}
+
+ div.common-container > div, main > form > div.item {
+  font-size: 0;
+  padding: 1.7rem 0 0;
+}
+
+div.common-container > div > p, main > form > div.item > label, div.container > div.attach-file > p, main > form > div.item.attach-file > p {
+  margin-bottom: 0.8rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 700;
+  transform: skew(-0.001deg);
+}
+
+main.biz.sale > div.common-container > div.additional > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main.biz.sale > div.common-container > div.additional > div > div.item {
+  display: inline-block;
+  width: 25%;
+  height: 3rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+main.biz.sale > div.common-container > div.additional > div > div.item > input {
+  display: none;
+}
+
+main.biz.sale > div.common-container > div.additional > div > div.item > input:checked + label {
+  background: #222;
+  color: #FFF;
+}
+main.biz.sale > div.common-container > div.additional > div > div.item {
+  display: inline-block;
+  width: 25%;
+  height: 3rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+main.biz.sale > div.common-container > div.additional > div > div.item > input {
+  display: none;
+}
+
+main.biz.sale > div.common-container > div.additional > div > div.item > input + label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+  font-family: 'Noto Sans KR';
+  transform: skew(-0.001deg);
+}
+
+main.biz.sale > div.common-container > div.additional > div > div.item {
+  display: inline-block;
+  width: 25%;
+  height: 3rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+div.common-container > div, main > form > div.item {
+  font-size: 0;
+  padding: 1.7rem 0 0;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div > input + label {
+  display: inline-block;
+  flex: 1;
+  height: 3.2rem;
+  line-height: 3rem;
+  background: #FFF;
+  text-align: center;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div > input {
+  display: none;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
+  background: #222;
+  color: #FFF;
+  border-right-color: #FFF;
+}
+/* 
+main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
+  background: #222;
+  color: #FFF;
+  border-right-color: #FFF;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div > input + label:first-of-type {
+  border-left: 1px solid #222;
+} */
+
+
+/* main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
+  background: #222;
+  color: #FFF;
+  border-right-color: #FFF;
+}
+
+main.biz.sale > div.common-container > div.additional > div > div.item:first-child > input + label {
+  border-left: 1px solid #222;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div > input + label {
+  display: inline-block;
+  flex: 1;
+  height: 3.2rem;
+  line-height: 3rem;
+  background: #FFF;
+  text-align: center;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+}
+
+main.biz.sale > div.common-container > div.exchange-type > div > input:checked + label {
+  background: #222;
+  color: #FFF;
+  border-right-color: #FFF;
+} */
+
+
+/* 주석 */

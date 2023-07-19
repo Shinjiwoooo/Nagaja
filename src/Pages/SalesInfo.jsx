@@ -70,7 +70,7 @@ const SalesInfo = () => {
                             <div>
                             <button class='default btn-edit'>수정</button>
                             <input type='text' name='' value='13 : 00 ~ 14 : 00' readonly/>
-                            <input type='text' name='' value='16 : 30 ~ 17 : 00' readonly/>
+                            {/* <input type='text' name='' value='16 : 30 ~ 17 : 00' readonly/> */}
                             </div>
                         </div>
 
@@ -82,11 +82,11 @@ const SalesInfo = () => {
                         <div class='exchange-type'>
                             <p>상품 기준 통화 설정</p>
                             <div>
-                            <input type='checkbox' name='exchange_type' id='ex-t-dollar' checked/>
+                            <input type='checkbox' name='exchange_type' id='ex-t-dollar'/>
                             <label for='ex-t-dollar' class='dolor'>$</label>
-                            <input type='checkbox' name='exchange_type' id='ex-t-won' checked/>
+                            <input type='checkbox' name='exchange_type' id='ex-t-won'/>
                             <label for='ex-t-won' class='won'>₩</label>
-                            <input type='checkbox' name='exchange_type' id='ex-t-peso' checked/>
+                            <input type='checkbox' name='exchange_type' id='ex-t-peso' />
                             <label for='ex-t-peso' class='peso'>₱</label>
                             <input type='checkbox' name='exchange_type' id='ex-t-yuan'/>
                             <label for='ex-t-yuan' class='yuan'>¥</label>
